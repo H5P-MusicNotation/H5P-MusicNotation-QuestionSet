@@ -1,0 +1,74 @@
+{
+  "title": "Music Notation Question Set",
+  "description": "Put together a set of different questions that have to be solved. (Quiz)",
+  "contentType": "question",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "embedTypes": [
+    "div"
+  ],
+  "runnable": 1,
+  "fullscreen": 0,
+  "machineName": "H5P.MusicNotationQuestionSet",
+  "author": "Joubel",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 19
+  },
+  "license": "MIT",
+  "preloadedJs": [
+    {
+      "path": "js/musicnotation-questionset.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "css/musicnotation-questionset.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Video",
+      "majorVersion": 1,
+      "minorVersion": 6
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.RangeList",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.QuestionSetTextualEditor",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.ShowWhen",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.NotationWidget",
+      "majorVersion": 1,
+      "minorVersion": 2
+    }
+  ]
+}
