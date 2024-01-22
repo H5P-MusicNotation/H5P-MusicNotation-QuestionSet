@@ -1,36 +1,51 @@
 {
   "semantics": [
     {
-      "label": "Viktoriini tutvustus",
+      "label": "Viktoriini sissejuhatus",
       "fields": [
         {
-          "label": "Kuva tutvustus"
+          "label": "N\u00e4ita sissejuhatus"
         },
         {
           "label": "Pealkiri",
-          "description": "Seda pealkirja näidatakse tutvustusteksti kohal."
+          "description": "See pealkiri kuvatakse sissejuhatuse teksti kohal.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Tutvustustekst",
-          "description": "Seda teksti näidatakse enne viktoriini algust."
+          "label": "Sissejuhatuse tekst",
+          "description": "See tekst kuvatakse enne viktoriini algust.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Alusta nupu tekst",
-          "default": "Alusta viktoriini"
+          "label": "Start nupu tekst",
+          "default": "Start Quiz"
         },
         {
           "label": "Taustapilt",
-          "description": "Valikuline taustapilt tutvustusele."
+          "description": "Valikuline taustapilt sissejuhatuse jaoks."
         }
       ]
     },
     {
       "label": "Taustapilt",
-      "description": "Valikuline taustapilt küsimustikule."
+      "description": "K\u00fcsimuste komplekti vabatahtlik taustapilt."
     },
     {
-      "label": "Edenemise osuti",
-      "description": "Küsimustiku edenemisosuti stiil.",
+      "label": "Edasimineku n\u00e4itaja",
+      "description": "K\u00fcsimuse seatud eduindikaatori stiil.",
       "options": [
         {
           "label": "Tekstiline"
@@ -38,14 +53,16 @@
         {
           "label": "Punktid"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
-      "label": "Läbimise protsent",
-      "description": "Protsent viktoriini läbimiseks vajalikust punktisummast."
+      "label": "L\u00e4biviidud protsent",
+      "description": "Protsentuaalne osakaal viktoriini l\u00e4bimiseks vajalikust kogupunktist.",
+      "default": 50
     },
     {
-      "label": "Küsimused",
+      "label": "K\u00fcsimused",
       "widgets": [
         {
           "label": "Vaikimisi"
@@ -54,109 +71,128 @@
           "label": "Tekstiline"
         }
       ],
-      "entity": "küsimus",
+      "entity": "question",
       "field": {
-        "label": "Küsimuse liik",
-        "description": "Selle küsimuse teek."
+        "label": "K\u00fcsimuse t\u00fc\u00fcp",
+        "description": "Raamatukogu selle k\u00fcsimuse jaoks.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Viktoriini kasutajaliidese tekstid",
+      "label": "Kasutajaliidese tekstid viktoriinis",
       "fields": [
         {
           "label": "Tagasi nupp",
-          "default": "Eelmine küsimus"
+          "default": "Previous question"
         },
         {
-          "label": "Edasi nupp",
-          "default": "Järgmine küsimus"
+          "label": "J\u00e4rgmine nupp",
+          "default": "Next question"
         },
         {
-          "label": "Lõpeta nupp",
-          "default": "Valmis"
+          "label": "L\u00f5peta nupp",
+          "default": "Finish"
         },
         {
-          "label": "Submit button",
+          "label": "Saada nuppu",
           "default": "Submit"
         },
         {
-          "label": "Edenemise tekst",
-          "description": "Test, mida kasutatakse, kui valitud on tekstiline edenemisosuti.",
-          "default": "Küsimus: @current kokku @total küsimusest"
+          "label": "Progressi tekst",
+          "description": "Tekst, mida kasutatakse, kui on valitud tekstiline progress.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Silt kindlale küsimusele hüppamiseks",
-          "description": "Pead kasutama küsimuse numbri asemel kohatäitjat '%d', ja küsimuste koguarvu asemel kohatäitjat %total.",
-          "default": "Küsimus %d kokku %total küsimusest"
+          "label": "M\u00e4rgis teatud k\u00fcsimuse juurde h\u00fcppamiseks",
+          "description": "K\u00fcsimuse numbri asemel tuleb kasutada paigutusm\u00e4rki \"%d\" ja k\u00fcsimuste koguarvu asemel %total.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Autoriõiguse dialoogi küsimuse silt",
-          "default": "Küsimus"
+          "label": "Autori\u00f5iguse dialoogi k\u00fcsimuse silt",
+          "default": "Question"
         },
         {
-          "label": "Tekstilugeri edenemine",
-          "description": "Võib kasutada @current ja @total küsimuse muutujaid",
-          "default": "Küsimus @current kokku @total küsimusest"
+          "label": "Readspeaker edusammud",
+          "description": "V\u00f5ib kasutada @current ja @total k\u00fcsimuste muutujaid.",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Vastamata küsimuse tekst",
-          "default": "Vastamata"
+          "label": "Vastamata k\u00fcsimuse tekst",
+          "default": "Unanswered"
         },
         {
-          "label": "Vastatud küsimuse tekst",
-          "default": "Vastatud"
+          "label": "Vastatud k\u00fcsimuse tekst",
+          "default": "Answered"
         },
         {
-          "label": "Jooksva küsimuse tekst",
-          "default": "Jooksev küsimus"
+          "label": "Praeguse k\u00fcsimuse tekst",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Navigeerimism\u00e4rgis lugemisk\u00f5nelejate jaoks",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Keela tagasi liikumine",
-      "description": "Selle valikuga saab kasutaja küsimustikus vaid edasi liikuda"
+      "label": "Tagasi navigatsiooni v\u00e4ljal\u00fclitamine",
+      "description": "See valik v\u00f5imaldab teil liikuda edasi ainult k\u00fcsimuste komplektis",
+      "default": false
     },
     {
-      "label": "Järjesta küsimused juhuslikult",
-      "description": "Luba näidatavate küsimuste juhuslik järjekord."
+      "label": "K\u00fcsimuste juhuslikuks muutmine",
+      "description": "V\u00f5imaldab kuvatud k\u00fcsimuste j\u00e4rjekorra juhuslikuks muutmise.",
+      "default": false
     },
     {
-      "label": "Näidatavate küsimuste arv:",
-      "description": "Loo kõigist küsimustest kogum juhuslikult järjestatud küsimusi."
+      "label": "N\u00e4idatavate k\u00fcsimuste arv:",
+      "description": "Looge juhuslikult valitud k\u00fcsimuste partii koguarvust."
     },
     {
-      "label": "Viktoriin on lõppenud",
+      "label": "Viktoriin valmis",
       "fields": [
         {
-          "label": "Näita tulemusi"
+          "label": "Tulemuste kuvamine",
+          "default": true
         },
         {
-          "label": "Näita lahendust nupp"
+          "label": "N\u00e4ita lahenduse nuppu",
+          "default": true
         },
         {
-          "label": "Display retry button"
+          "label": "N\u00e4idata uuesti proovimise nuppu",
+          "default": true
         },
         {
-          "label": "Tulemusi ei ole sõnum",
-          "description": "Tekst, mida näidatakse lehe lõpus, kui \"Näita tulemusi\" on keelatud",
-          "default": "Lõppenud"
+          "label": "Tulemuste s\u00f5num puudub",
+          "description": "L\u00f5pplehel kuvatav tekst, kui \"Tulemuste kuvamine\" on v\u00e4lja l\u00fclitatud",
+          "default": "Finished"
         },
         {
-          "label": "Tagasiside pealkiri",
-          "default": "Sinu tulemus:",
-          "description": "Seda pealkirja näidatakse viktoriini lõpus, kui kasutaja on kõik küsimused vastanud."
+          "label": "Tagasiside rubriik",
+          "default": "Your result:",
+          "description": "See pealkiri kuvatakse viktoriini l\u00f5pus, kui kasutaja on vastanud k\u00f5igile k\u00fcsimustele.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Score announcer",
-          "description": "This label will be used for announcing the final score to the user on the end screen",
+          "label": "Tulemuste v\u00e4ljakuulutaja",
+          "description": "Seda sildi kasutatakse l\u00f5ppskoori teatamiseks kasutajale l\u00f5ppekraanil.",
           "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Üldine tagasiside",
+          "label": "\u00dcldine tagasiside",
           "fields": [
             {
               "widgets": [
@@ -164,18 +200,21 @@
                   "label": "Vaikimisi"
                 }
               ],
-              "label": "Määratle kohandatud tagasiside iga punktisumma vahemiku jaoks",
-              "description": "Näiteks: 0-20% halb tulemus, 21-91% keskmine tulemus, 91-100% suurepärane tulemus!",
-              "entity": "vahemik",
+              "label": "M\u00e4\u00e4rake kohandatud tagasiside mis tahes skoorivahemiku jaoks",
+              "description": "Vajutage nupule \"Lisa vahemik\", et lisada nii palju vahemikke kui vaja. N\u00e4ide: 0-20% halb tulemus, 21-91% keskmine tulemus, 91-100% suurep\u00e4rane tulemus!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Punktisumma vahemik"
+                    "label": "Tulemuste vahemik",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Määratletud punktisummavahemiku tagasiside",
-                    "placeholder": "Sisesta tagasiside"
+                    "default": 100
+                  },
+                  {
+                    "label": "Tagasiside m\u00e4\u00e4ratletud skoorivahemiku kohta",
+                    "placeholder": "T\u00e4itke tagasiside"
                   }
                 ]
               }
@@ -186,89 +225,132 @@
           "label": "Vana tagasiside",
           "fields": [
             {
-              "label": "Viktoriin läbitud sõnum",
-              "description": "Seda teksti näidatakse punktisumma kohal, kui kasutaja on edukalt viktoriini läbinud."
+              "label": "Viktoriin l\u00e4bitud tervitus",
+              "description": "See tekst kuvatakse tulemuse kohal, kui kasutaja on viktoriini edukalt l\u00e4binud.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Läbitud kommentaar",
-              "description": "Seda kommentaari näidatakse punktisumma järel peale seda, kui kasutaja on viktoriini edukalt läbinud."
+              "label": "L\u00e4biviidud kommentaar",
+              "description": "See kommentaar kuvatakse p\u00e4rast tulemust, kui kasutaja on viktoriini edukalt l\u00e4binud.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Viktoriin ebaõnnestus pealkiri",
-              "description": "Seda teksti näidatakse punktisumma kohal, kui kasutajal ebaõnnestus viktoriini täitmine."
+              "label": "Viktoriini eba\u00f5nnestunud pealkiri",
+              "description": "See tekst kuvatakse punktisumma kohal, kui kasutaja on viktoriinis eba\u00f5nnestunud.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Ebaõnnestus kommentaar",
-              "description": "Seda kommentaari näidatakse punktisumma järel siis, kui kasutajal ebaõnnestus viktoriini täitmine."
+              "label": "Eba\u00f5nnestunud kommentaar",
+              "description": "See kommentaar kuvatakse p\u00e4rast tulemust, kui kasutaja on viktoriinis eba\u00f5nnestunud.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Lahendus nupu silt",
-          "default": "Õige vastus",
-          "description": "Lahendus nupu tekst."
+          "label": "Lahenduse nupu silt",
+          "default": "Show solution",
+          "description": "Lahendusnupu tekst."
         },
         {
-          "label": "Proovi uuesti nupu silt",
-          "default": "Proovi uuesti",
-          "description": "Tekst Proovi uuesti nupule."
+          "label": "Nupu \"Retry\" m\u00e4rgistus",
+          "default": "Retry",
+          "description": "Kordusnupu tekst."
         },
         {
-          "label": "Valmis nupu tekst",
-          "default": "Valmis"
+          "label": "L\u00f5peta nupu tekst",
+          "default": "Finish"
         },
         {
-          "label": "Submit button text",
+          "label": "Nupu esitamisnupu tekst",
           "default": "Submit"
         },
         {
-          "label": "Kuva videot enne viktoriini tulemusi"
+          "label": "Kuva video enne viktoriini tulemusi"
         },
         {
-          "label": "Luba video vahelejätmise nupp"
+          "label": "Video vahelej\u00e4tmise nupu lubamine"
         },
         {
-          "label": "Jäta video vahele nupu silt",
-          "default": "Jäta video vahele"
+          "label": "Video vahelej\u00e4tmise nupu silt",
+          "default": "Skip video"
         },
         {
-          "label": "Läbitud video",
-          "description": "Seda videot mängitakse, kui kasutaja on viktoriini edukalt läbinud."
+          "label": "L\u00e4bitud video",
+          "description": "Seda videot m\u00e4ngitakse, kui kasutaja on viktoriini edukalt l\u00e4binud."
         },
         {
-          "label": "Ebaõnnestunud video",
-          "description": "Seda videot näidatakse, kui kasutajal ebaõnnestus viktoriini täitmine."
+          "label": "Eba\u00f5nnestumise video",
+          "description": "Seda videot m\u00e4ngitakse, kui kasutaja kukub viktoriinis l\u00e4bi."
         }
       ]
     },
     {
-      "label": "\"Näita lahendust\" ja \"Proovi uuesti\" nuppude seadistused",
+      "label": "Seadistused \"Kontrolli\", \"N\u00e4ita lahendust\" ja \"Korda\".",
       "fields": [
         {
-          "label": "Näita \"Kontrolli\" nuppu",
-          "description": "See valik määrab, kas \"Kontrolli\" nuppu näidatakse kõigi küsimuste juures."
+          "label": "N\u00e4ita nuppe \"Kontrolli\"",
+          "description": "See valik m\u00e4\u00e4rab, kas k\u00f5igi k\u00fcsimuste puhul kuvatakse nuppu \"Kontrollida\".",
+          "default": true
         },
         {
-          "label": "\"Näita lahendust\" nupu käitumine",
-          "description": "See valik määrab, kas \"Show Solution\" nuppu näidatakse kõigi küsimuste juures, on kõigil küsimustel keelatud või häälestatakse igal küsimusel eraldi.",
+          "label": "\"N\u00e4ita lahendust\" nupu \u00fcletamine",
+          "description": "See valik m\u00e4\u00e4rab, kas nuppu \"N\u00e4ita lahendust\" n\u00e4idatakse k\u00f5igi k\u00fcsimuste puhul, kas see on k\u00f5igi puhul v\u00e4lja l\u00fclitatud v\u00f5i kas see on konfigureeritud iga k\u00fcsimuse jaoks eraldi.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
               "label": "Lubatud"
             },
             {
-              "label": "Keelatud"
+              "label": "Puudega inimesed"
             }
           ]
         },
         {
-          "label": "\"Proovi uuesti\" nupu käitumine",
-          "description": "See valik määrab, kas \"Proovi uuesti\" nuppu näidatakse kõigi küsimuste juures, on kõigil küsimustel keelatud või häälestatakse igal küsimusel eraldi.",
+          "label": "Nupu \"\u00dcmberl\u00fclitamine\" nupp",
+          "description": "See valik m\u00e4\u00e4rab, kas nuppu \"Korda\" n\u00e4idatakse k\u00f5igi k\u00fcsimuste puhul, kas see on k\u00f5igi puhul v\u00e4lja l\u00fclitatud v\u00f5i kas see on konfigureeritud iga k\u00fcsimuse jaoks eraldi.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
               "label": "Lubatud"
             },
             {
-              "label": "Keelatud"
+              "label": "Puudega inimesed"
             }
           ]
         }

@@ -1,48 +1,65 @@
 {
   "semantics": [
     {
-      "label": "Introduzione al compito",
+      "label": "Introduzione al quiz",
       "fields": [
         {
-          "label": "Mostra introduzione"
+          "label": "Introduzione al display"
         },
         {
           "label": "Titolo",
-          "description": "Questo titolo sarà visualizzato sopra il testo introduttivo"
+          "description": "Questo titolo verr\u00e0 visualizzato sopra il testo introduttivo.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Testo di introduzione",
-          "description": "Questo testo sarà visualizzato prima dell'inizio della prova"
+          "label": "Testo introduttivo",
+          "description": "Questo testo verr\u00e0 visualizzato prima dell'inizio del quiz.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
           "label": "Testo del pulsante di avvio",
-          "default": "Inizia la prova"
+          "default": "Start Quiz"
         },
         {
           "label": "Immagine di sfondo",
-          "description": "Immagine di sfondo facoltativa per l'introduzione"
+          "description": "Un'immagine di sfondo opzionale per l'introduzione."
         }
       ]
     },
     {
       "label": "Immagine di sfondo",
-      "description": "Immagine di sfondo facoltativa per il gruppo di domande"
+      "description": "Un'immagine di sfondo opzionale per il set di domande."
     },
     {
-      "label": "Indicatore di avanzamento",
-      "description": "Stile dell'indicatore di avanzamento del gruppo di domande",
+      "label": "Indicatore di progresso",
+      "description": "Stile dell'indicatore di progresso impostato sulla domanda.",
       "options": [
         {
           "label": "Testuale"
         },
         {
-          "label": "Punti"
+          "label": "Puntini"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
-      "label": "Percentuale di superamento della prova",
-      "description": "Percentuale del punteggio totale richiesto per superare la prova"
+      "label": "Percentuale di superamento",
+      "description": "Percentuale del punteggio totale richiesto per superare il quiz.",
+      "default": 50
     },
     {
       "label": "Domande",
@@ -54,109 +71,128 @@
           "label": "Testuale"
         }
       ],
-      "entity": "domanda",
+      "entity": "question",
       "field": {
         "label": "Tipo di domanda",
-        "description": "Libreria per questa domanda"
+        "description": "Biblioteca per questa domanda.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Testi di interfaccia nel compito",
+      "label": "Testi dell'interfaccia nel quiz",
       "fields": [
         {
-          "label": "Pulsante indietro",
-          "default": "Domanda precedente"
+          "label": "Pulsante posteriore",
+          "default": "Previous question"
         },
         {
-          "label": "Pulsante avanti",
-          "default": "Prossima domanda"
+          "label": "Pulsante successivo",
+          "default": "Next question"
         },
         {
-          "label": "Pulsante fine",
-          "default": "Finito"
+          "label": "Pulsante di chiusura",
+          "default": "Finish"
         },
         {
-          "label": "Submit button",
+          "label": "Pulsante di invio",
           "default": "Submit"
         },
         {
           "label": "Testo di avanzamento",
-          "description": "Testo usato se è selezionato l'avanzamento testuale",
-          "default": "Domanda: @current di @total domande totali"
+          "description": "Testo utilizzato se si seleziona l'avanzamento testuale.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
           "label": "Etichetta per saltare a una determinata domanda",
-          "description": "Devi usare il segnaposto '%d' anziché il numero di domanda, e %total invece del numero totale delle domande",
-          "default": "Domanda %d di %total"
+          "description": "\u00c8 necessario utilizzare il segnaposto '%d' al posto del numero di domande e %totale al posto del totale delle domande.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Etichetta della domanda nella finestra sul diritto d'autore",
-          "default": "Domanda"
+          "label": "Etichetta della domanda di dialogo sul copyright",
+          "default": "Question"
         },
         {
-          "label": "Stato di avanzamento del lettore vocale",
-          "description": "Puoi utilizzare le variabili di domanda @current e @total",
-          "default": "Domanda @current di @total"
+          "label": "Progressi di lettura dell'altoparlante",
+          "description": "Pu\u00f2 utilizzare le variabili di domanda @corrente e @totale",
+          "default": "Question @current of @total"
         },
         {
           "label": "Testo della domanda senza risposta",
-          "default": "Senza risposta"
+          "default": "Unanswered"
         },
         {
-          "label": "Testo della domanda con risposta",
-          "default": "Risposta"
+          "label": "Testo della domanda risposta",
+          "default": "Answered"
         },
         {
-          "label": "Testo della domanda corrente",
-          "default": "Domanda corrente"
+          "label": "Testo della domanda attuale",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Etichetta di navigazione per i lettori",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Disattiva la navigazione all'indietro",
-      "description": "Questa opzione ti permetterà solo di spostarti in avanti in Question Set"
+      "label": "Disattivare la navigazione a ritroso",
+      "description": "Questa opzione consente di avanzare solo nella serie di domande.",
+      "default": false
     },
     {
-      "label": "Rendi casuale l'ordine delle domande",
-      "description": "Abilita per rendere casuale l'ordine delle domande sullo schermo"
+      "label": "Randomizzare le domande",
+      "description": "Consente di randomizzare l'ordine delle domande visualizzate.",
+      "default": false
     },
     {
-      "label": "Numero di domande da mostrare:",
-      "description": "Crea un raggruppamento casuale dal totale delle domande"
+      "label": "Numero di domande da visualizzare:",
+      "description": "Creare un gruppo di domande randomizzate dal totale."
     },
     {
-      "label": "Compito terminato",
+      "label": "Quiz finito",
       "fields": [
         {
-          "label": "Visualizza i risultati"
+          "label": "Visualizza i risultati",
+          "default": true
         },
         {
-          "label": "Pulsante visualizza soluzione"
+          "label": "Pulsante di visualizzazione della soluzione",
+          "default": true
         },
         {
-          "label": "Mostra pulsante Riprova"
+          "label": "Pulsante di ripetizione del display",
+          "default": true
         },
         {
-          "label": "Messaggio di nessun risultato",
-          "description": "Testo mostrato nella pagina finale quando \"Visualizza risultati\" è disattivato",
-          "default": "Finito"
+          "label": "Messaggio di assenza di risultati",
+          "description": "Testo visualizzato a fine pagina quando \"Visualizza risultati\" \u00e8 disattivato",
+          "default": "Finished"
         },
         {
-          "label": "Intestazione di feedback",
-          "default": "Il tuo risultato:",
-          "description": "Questa intestazione sarà mostrata alla fine del compito, dopo che l'utente avrà risposto a tutte le domande"
+          "label": "Voce di feedback",
+          "default": "Your result:",
+          "description": "Questa voce verr\u00e0 visualizzata alla fine del quiz, quando l'utente avr\u00e0 risposto a tutte le domande.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Score announcer",
-          "description": "This label will be used for announcing the final score to the user on the end screen",
+          "label": "Annunciatore del punteggio",
+          "description": "Questa etichetta sar\u00e0 utilizzata per annunciare il punteggio finale all'utente nella schermata finale.",
           "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Feedback generale",
+          "label": "Feedback complessivo",
           "fields": [
             {
               "widgets": [
@@ -164,18 +200,21 @@
                   "label": "Predefinito"
                 }
               ],
-              "label": "Definisci un feedback personalizzato per ogni intervallo di punteggio",
-              "description": "Esempio: 0-20%, Punteggio scarso; 21-90%, Punteggio medio; 91-100% Punteggio ottimo!",
-              "entity": "Intervallo",
+              "label": "Definire un feedback personalizzato per qualsiasi intervallo di punteggio",
+              "description": "Fare clic sul pulsante \"Aggiungi intervallo\" per aggiungere tutti gli intervalli necessari. Esempio: 0-20% Punteggio negativo, 21-91% Punteggio medio, 91-100% Punteggio ottimo!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Intervallo di punteggio"
+                    "label": "Intervallo di punteggio",
+                    "default": 0
                   },
-                  {},
+                  {
+                    "default": 100
+                  },
                   {
                     "label": "Feedback per un intervallo di punteggio definito",
-                    "placeholder": "Compila il feedback"
+                    "placeholder": "Compilare il feedback"
                   }
                 ]
               }
@@ -183,92 +222,135 @@
           ]
         },
         {
-          "label": "Vecchio feedback",
+          "label": "Vecchio Feedback",
           "fields": [
             {
-              "label": "Messaggio di superamento della prova",
-              "description": "Questo testo sarà mostrato sopra il punteggio se l'utente ha superato la prova con successo"
+              "label": "Saluto del Quiz superato",
+              "description": "Questo testo verr\u00e0 visualizzato sopra il punteggio se l'utente ha superato con successo il quiz.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Commento di superamento della prova",
-              "description": "Questo commento sarà mostrato dopo il punteggio se l'utente ha superato la prova con successo"
+              "label": "Commento superato",
+              "description": "Questo commento verr\u00e0 visualizzato dopo il punteggio se l'utente ha superato con successo il quiz.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Titolo per prova fallita",
-              "description": "Questo messaggio sarà mostrato sopra il punteggio se l'utente non ha superato la prova"
+              "label": "Titolo del quiz fallito",
+              "description": "Questo testo verr\u00e0 visualizzato sopra il punteggio se l'utente ha fallito il quiz.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Commento per prova fallita",
-              "description": "Questo commento sarà mostrato dopo il punteggio se l'utente non ha superato la prova"
+              "label": "Commento non riuscito",
+              "description": "Questo commento verr\u00e0 visualizzato dopo il punteggio se l'utente ha fallito il quiz.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Etichetta del pulsante \"Mostra soluzione\"",
-          "default": "Mostra soluzione",
-          "description": "Testo per il pulsante \"Mostra soluzione\""
+          "label": "Etichetta del pulsante della soluzione",
+          "default": "Show solution",
+          "description": "Testo per il pulsante di soluzione."
         },
         {
-          "label": "Etichetta del pulsante \"Riprova\"",
-          "default": "Riprova",
-          "description": "Testo per il pulsante \"Riprova\"."
+          "label": "Etichetta del pulsante Riprova",
+          "default": "Retry",
+          "description": "Testo per il pulsante di ripetizione."
         },
         {
-          "label": "Testo del pulsante di fine prova",
-          "default": "Finito"
+          "label": "Testo del pulsante Fine",
+          "default": "Finish"
         },
         {
-          "label": "Submit button text",
+          "label": "Testo del pulsante di invio",
           "default": "Submit"
         },
         {
-          "label": "Mostra il video prima dei risultati della prova"
+          "label": "Visualizzare il video prima dei risultati del quiz"
         },
         {
-          "label": "Pulsante per attivare \"Salta video\""
+          "label": "Abilita il pulsante di salto del video"
         },
         {
-          "label": "Etichetta del pulsante \"Salta video\"",
-          "default": "Salta video"
+          "label": "Etichetta del pulsante Salta video",
+          "default": "Skip video"
         },
         {
-          "label": "Video per superamento della prova",
-          "description": "Questo video sarà mostrato sopra il punteggio se l'utente ha superato la prova con successo"
+          "label": "Video superato",
+          "description": "Questo video verr\u00e0 riprodotto se l'utente ha superato con successo il quiz."
         },
         {
-          "label": "Video per mancato superamento della prova",
-          "description": "Questo testo sarà mostrato se l'utente non ha superato la prova"
+          "label": "Video del fallimento",
+          "description": "Questo video verr\u00e0 riprodotto se l'utente non supera il quiz."
         }
       ]
     },
     {
-      "label": "Impostazioni per i pulsanti \"Mostra soluzione\" e \"Riprova\"",
+      "label": "Impostazioni per \"Verifica\", \"Mostra soluzione\" e \"Riprova\".",
       "fields": [
         {
-          "label": "Mostra pulsanti di \"Verifica\"",
-          "description": "Questa opzione rende disponibile il pulsante di verifica su ogni domanda"
+          "label": "Mostra i pulsanti di \"Controllo",
+          "description": "Questa opzione determina se il pulsante \"Controlla\" sar\u00e0 visualizzato per tutte le domande.",
+          "default": true
         },
         {
-          "label": "Sovrascrivi il pulsante \"Mostra soluzione\"",
-          "description": "Questa opzione stabilisce se il pulsante \"Mostra soluzione\" sarà mostrato su tutte le domande, su nessuna o se decidere caso per caso",
+          "label": "Sovrascrivere il pulsante \"Mostra soluzione",
+          "description": "Questa opzione determina se il pulsante \"Mostra soluzione\" sar\u00e0 mostrato per tutte le domande, se sar\u00e0 disattivato per tutte o se sar\u00e0 configurato per ogni singola domanda.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Attivato"
+              "label": "Abilitato"
             },
             {
-              "label": "Disattivato"
+              "label": "Disabili"
             }
           ]
         },
         {
-          "label": "Sovrascrivi il pulsante \"Riprova\"",
-          "description": "Questa opzione stabilisce se il pulsante \"Riprova\" sarà mostrato su tutte le domande, su nessuna o se sarà configurato caso per caso",
+          "label": "Annullamento del pulsante \"Riprova",
+          "description": "Questa opzione determina se il pulsante \"Riprova\" sar\u00e0 visualizzato per tutte le domande, disattivato per tutte o configurato per ogni singola domanda.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Attivato"
+              "label": "Abilitato"
             },
             {
-              "label": "Disattivato"
+              "label": "Disabili"
             }
           ]
         }

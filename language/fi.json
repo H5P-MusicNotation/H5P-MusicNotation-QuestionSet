@@ -1,22 +1,37 @@
 {
   "semantics": [
     {
-      "label": "Tietovisan johdanto",
+      "label": "Tietokilpailun johdanto",
       "fields": [
         {
-          "label": "Näytä johdanto"
+          "label": "N\u00e4yt\u00f6n esittely"
         },
         {
           "label": "Otsikko",
-          "description": "Johdanto-osion otsikko."
+          "description": "T\u00e4m\u00e4 otsikko n\u00e4kyy johdantotekstin yl\u00e4puolella.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Johdantoteksti",
-          "description": "Teksti näytetään ennen visan alkua."
+          "label": "Johdanto",
+          "description": "T\u00e4m\u00e4 teksti n\u00e4ytet\u00e4\u00e4n ennen tietokilpailun alkua.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Aloita -painikkeen teksti",
-          "default": "Aloita"
+          "label": "Aloituspainikkeen teksti",
+          "default": "Start Quiz"
         },
         {
           "label": "Taustakuva",
@@ -26,23 +41,25 @@
     },
     {
       "label": "Taustakuva",
-      "description": "Valinnainen taustakuva kysymyksille."
+      "description": "Kysymyssarjan valinnainen taustakuva."
     },
     {
-      "label": "Edistymisen näyttäminen",
-      "description": "Miten edistyminen tehtävässä näytetään tekijälle.",
+      "label": "Edistymisindikaattori",
+      "description": "Kysymys asettaa edistymisindikaattorin tyylin.",
       "options": [
         {
           "label": "Teksti"
         },
         {
-          "label": "Täplät"
+          "label": "Pisteet"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
-      "label": "Läpäisyprosentti",
-      "description": "Kuinka monta prosenttia maksimipisteistä vaaditaan tehtävän läpäisyyn."
+      "label": "L\u00e4p\u00e4isyprosentti",
+      "description": "Prosenttiosuus kokonaispistem\u00e4\u00e4r\u00e4st\u00e4, joka vaaditaan tietokilpailun l\u00e4p\u00e4isemiseen.",
+      "default": 50
     },
     {
       "label": "Kysymykset",
@@ -54,128 +71,150 @@
           "label": "Teksti"
         }
       ],
-      "entity": "kysymys",
+      "entity": "question",
       "field": {
         "label": "Kysymyksen tyyppi",
-        "description": "Tarjolla olevat kysymystyypit."
+        "description": "Kirjasto t\u00e4t\u00e4 kysymyst\u00e4 varten.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Käyttöliittymän tekstit",
+      "label": "K\u00e4ytt\u00f6liittym\u00e4n tekstit tietokilpailussa",
       "fields": [
         {
-          "label": "Painikkeen Edellinen teksti",
-          "default": "Edellinen kysymys"
+          "label": "Takaisin-painike",
+          "default": "Previous question"
         },
         {
-          "label": "Painikkeen Seuraava teksti",
-          "default": "Seuraava kysymys"
+          "label": "Seuraava painike",
+          "default": "Next question"
         },
         {
-          "label": "Painikkeen Lopeta teksti",
-          "default": "Lopeta"
+          "label": "Viimeistelypainike",
+          "default": "Finish"
         },
         {
-          "label": "Submit button",
+          "label": "L\u00e4het\u00e4-painike",
           "default": "Submit"
         },
         {
-          "label": "Edistyminen",
-          "description": "Tekstiä käytetään mikäli tekstimuotoinen edistymisen näyttäminen on valittuna.",
-          "default": "Kysymys @current/@total"
+          "label": "Teksti edistymisest\u00e4",
+          "description": "Teksti, jota k\u00e4ytet\u00e4\u00e4n, jos tekstimuotoinen edistyminen on valittu.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Teksti kun hypätään tiettyyn kysymykseen",
-          "description": "Käytettävissä olevat muuttujat: '%d' kysymyksen numerolle ja %total kysymysten kokonaismäärälle.",
-          "default": "Kysymys %d/%total"
+          "label": "Tarra hypp\u00e4\u00e4miseen tiettyyn kysymykseen",
+          "description": "Sinun on k\u00e4ytett\u00e4v\u00e4 kysymysten numeron sijasta sijoitusmerkki\u00e4 '%d' ja kysymysten kokonaism\u00e4\u00e4r\u00e4n sijasta %total.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Kysymyksen selite tekijänoikeusvalinnoissa",
-          "default": "Kysymys"
+          "label": "Tekij\u00e4noikeus dialogin kysymyksen etiketti",
+          "default": "Question"
         },
         {
-          "label": "Ruudunlukijan teksti edistymiselle",
-          "description": "Käytettävissä olevat muuttujat: @current ja @total",
-          "default": "Kysymys @current/@total"
+          "label": "Lukijakaiuttimen edistyminen",
+          "description": "Voidaan k\u00e4ytt\u00e4\u00e4 @current- ja @total-kysymysmuuttujia.",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Teksti vastaamattomalle kysymykselle",
-          "default": "Ei vastattu"
+          "label": "Vastaamaton kysymys teksti",
+          "default": "Unanswered"
         },
         {
-          "label": "Teksti vastatulle kysymykselle",
-          "default": "Vastattu"
+          "label": "Vastatun kysymyksen teksti",
+          "default": "Answered"
         },
         {
-          "label": "Teksti meneillään olevalle kysymykselle",
-          "default": "Meneillään oleva kysymys"
+          "label": "Nykyisen kysymyksen teksti",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Navigointitarra luetunymm\u00e4rt\u00e4jille",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Estä paluu",
-      "description": "Tämä valinta sallii vain eteenpäin siirtymisen tehtävässä"
+      "label": "Poista navigointi taaksep\u00e4in k\u00e4yt\u00f6st\u00e4",
+      "description": "T\u00e4m\u00e4n vaihtoehdon avulla voit siirty\u00e4 eteenp\u00e4in vain kysymyssarjassa.",
+      "default": false
     },
     {
-      "label": "Sekoita kysymykset",
-      "description": "Kysymykset näytetään satunnaisessa järjestyksessä."
+      "label": "Satunnaistetaan kysymykset",
+      "description": "Voit satunnaistaa kysymysten j\u00e4rjestyksen n\u00e4yt\u00f6ll\u00e4.",
+      "default": false
     },
     {
-      "label": "Näytettävien kysymyksien määrä:",
-      "description": "Näytetään  annettu lukumäärä kysymyksiä kokonaismäärästä."
+      "label": "N\u00e4ytett\u00e4vien kysymysten m\u00e4\u00e4r\u00e4:",
+      "description": "Luo satunnaistettu kysymyser\u00e4 kaikista kysymyksist\u00e4."
     },
     {
-      "label": "Tehtävän päätyttyä",
+      "label": "Tietokilpailu valmis",
       "fields": [
         {
-          "label": "Näytä tulokset"
+          "label": "N\u00e4yt\u00e4 tulokset",
+          "default": true
         },
         {
-          "label": "Salli painike \"Katso vastaus\""
+          "label": "N\u00e4yt\u00f6n ratkaisupainike",
+          "default": true
         },
         {
-          "label": "Näytä yritä uudelleen -painike"
+          "label": "N\u00e4yt\u00f6n uusintapainike",
+          "default": true
         },
         {
-          "label": "Teksti kun ei tuloksia",
-          "description": "Teksti näytetään, kun \"Näytä tulokset\" ei ole valittuna",
-          "default": "Valmis"
+          "label": "Ei tuloksia -viesti",
+          "description": "Loppusivulla n\u00e4kyv\u00e4 teksti, kun \"N\u00e4yt\u00e4 tulokset\" on poistettu k\u00e4yt\u00f6st\u00e4.",
+          "default": "Finished"
         },
         {
-          "label": "Palautteet otsikko",
-          "default": "Tuloksesi:",
-          "description": "Otsikko näytetään tehtävän lopussa, kun käyttäjä on vastannut kaikkiin kysymyksiin."
+          "label": "Palautteen otsikko",
+          "default": "Your result:",
+          "description": "T\u00e4m\u00e4 otsikko n\u00e4ytet\u00e4\u00e4n tietokilpailun lopussa, kun k\u00e4ytt\u00e4j\u00e4 on vastannut kaikkiin kysymyksiin.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Score announcer",
-          "description": "This label will be used for announcing the final score to the user on the end screen",
+          "label": "Pisteiden selostaja",
+          "description": "T\u00e4t\u00e4 merkint\u00e4\u00e4 k\u00e4ytet\u00e4\u00e4n lopputuloksen ilmoittamiseen k\u00e4ytt\u00e4j\u00e4lle loppun\u00e4yt\u00f6ll\u00e4.",
           "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Yleispalaute",
+          "label": "Yleinen palaute",
           "fields": [
             {
               "widgets": [
                 {
-                  "label": "Default"
+                  "label": "Oletus"
                 }
               ],
-              "label": "Määritä muokattu palaute pisterajojen mukaan.",
-              "description": "Klikkaa \"Lisää alue\" painiketta lisätäksesi niin monta pisterajaa kuin tarvit. Esimerkiksi: 0-20% Huono tulos, 21-91% Kelpo tulos, 91-100% Mahtava tulos!",
-              "entity": "alue",
+              "label": "M\u00e4\u00e4rit\u00e4 mukautettu palaute mille tahansa pisteytysalueelle",
+              "description": "Napsauta \"Lis\u00e4\u00e4 alue\" -painiketta lis\u00e4t\u00e4ksesi niin monta aluetta kuin tarvitset. Esimerkki: 0-20% Huono pistem\u00e4\u00e4r\u00e4, 21-91% Keskim\u00e4\u00e4r\u00e4inen pistem\u00e4\u00e4r\u00e4, 91-100% Loistava pistem\u00e4\u00e4r\u00e4!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Pisteraja"
+                    "label": "Pistealue",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Palaute määritellylle pisterajalle",
-                    "placeholder": "Kirjoita palaute"
+                    "default": 100
+                  },
+                  {
+                    "label": "Palaute m\u00e4\u00e4ritellylle pisteytysalueelle",
+                    "placeholder": "T\u00e4yt\u00e4 palaute"
                   }
                 ]
               }
@@ -186,89 +225,132 @@
           "label": "Vanha palaute",
           "fields": [
             {
-              "label": "Otsikko onnistuneesti läpäistylle tietovisalle",
-              "description": "Tämä otsikkoteksti näytetään pisteiden yläpuolella kun käyttäjä on onnistuneesti läpäissyt tietovisan."
+              "label": "Tietokilpailu l\u00e4p\u00e4issyt tervehdyksen",
+              "description": "T\u00e4m\u00e4 teksti n\u00e4ytet\u00e4\u00e4n pistem\u00e4\u00e4r\u00e4n yl\u00e4puolella, jos k\u00e4ytt\u00e4j\u00e4 on l\u00e4p\u00e4issyt kokeen onnistuneesti.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Läpäisykommentti",
-              "description": "Tämä kommentti näytetään pisteiden perässä jos henkilö on läpäissyt tietovisan onnistuneesti."
+              "label": "Hyv\u00e4ksytty kommentti",
+              "description": "T\u00e4m\u00e4 kommentti n\u00e4ytet\u00e4\u00e4n pistem\u00e4\u00e4r\u00e4n j\u00e4lkeen, jos k\u00e4ytt\u00e4j\u00e4 on l\u00e4p\u00e4issyt kokeen onnistuneesti.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Otsikko epäonnistuneelle tietovisalle",
-              "description": "Tämä otsikkoteksti näytetään pisteiden yläpuolella kun käyttäjä on epäonnistunut läpäisemään tietovisan."
+              "label": "Quiz ep\u00e4onnistui otsikko",
+              "description": "T\u00e4m\u00e4 teksti n\u00e4ytet\u00e4\u00e4n pistem\u00e4\u00e4r\u00e4n yl\u00e4puolella, jos k\u00e4ytt\u00e4j\u00e4 ei ole l\u00e4p\u00e4issyt koetta.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Epäonnistuneen yrityksen kommentti",
-              "description": "Tämä kommentti näytetään pisteiden perässä jos henkilö ei ole läpäissyt tietovisaa"
+              "label": "Ep\u00e4onnistunut kommentti",
+              "description": "T\u00e4m\u00e4 kommentti n\u00e4ytet\u00e4\u00e4n pistem\u00e4\u00e4r\u00e4n j\u00e4lkeen, jos k\u00e4ytt\u00e4j\u00e4 ei ole l\u00e4p\u00e4issyt koetta.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Painikkeen \"Katso vastaus\" nimi",
-          "default": "Katso vastaus",
-          "description": "Teksti \"Katso vastaus\" painikkeelle."
+          "label": "Ratkaisupainikkeen etiketti",
+          "default": "Show solution",
+          "description": "Ratkaisupainikkeen teksti."
         },
         {
-          "label": "Painikkeen \"Yritä uudelleen\" nimi",
-          "default": "Yritä uudelleen",
-          "description": "Teksti \"Yritä uudelleen\" painikkeelle."
+          "label": "Retry-painikkeen etiketti",
+          "default": "Retry",
+          "description": "Teksti uusintapainiketta varten."
         },
         {
-          "label": "Painikkeen \"Lopeta\" teksti",
-          "default": "Lopeta"
+          "label": "Viimeistele-painikkeen teksti",
+          "default": "Finish"
         },
         {
-          "label": "Submit button text",
+          "label": "L\u00e4het\u00e4-painikkeen teksti",
           "default": "Submit"
         },
         {
-          "label": "Näytä video ennen tuloksia"
+          "label": "N\u00e4yt\u00e4 video ennen tietokilpailun tuloksia"
         },
         {
-          "label": "Salli videon ohittaminen"
+          "label": "Ota videon ohituspainike k\u00e4ytt\u00f6\u00f6n"
         },
         {
-          "label": "Teksti painikkeelle Ohita video",
-          "default": "Ohita video"
+          "label": "Ohita video -painikkeen etiketti",
+          "default": "Skip video"
         },
         {
-          "label": "Video, kun suoritettu",
-          "description": "Tämä video näytetään, kun tehtävä on suoritettu onnistuneesti."
+          "label": "L\u00e4p\u00e4issyt video",
+          "description": "T\u00e4m\u00e4 video toistetaan, jos k\u00e4ytt\u00e4j\u00e4 on l\u00e4p\u00e4issyt tietokilpailun."
         },
         {
-          "label": "Video, kun ei suoritettu",
-          "description": "Tämä video näytetään, kun tehtävää ei ole suoritettu onnistuneesti."
+          "label": "Fail video",
+          "description": "T\u00e4m\u00e4 video toistetaan, jos k\u00e4ytt\u00e4j\u00e4 ei l\u00e4p\u00e4ise tietovisaa."
         }
       ]
     },
     {
-      "label": "Asetukset \"Näytä vastaus\" ja \"Yritä uudelleen\" painikkeille",
+      "label": "Asetukset \"Tarkista\", \"N\u00e4yt\u00e4 ratkaisu\" ja \"Yrit\u00e4 uudelleen\".",
       "fields": [
         {
-          "label": "Näytä \"Check\" painike",
-          "description": "Tämä asetus määrittää näytetäänkö \"Check\" painike kaikkien kysymysten yhteydessä."
+          "label": "N\u00e4yt\u00e4 \"Tarkista\"-painikkeet",
+          "description": "T\u00e4m\u00e4 vaihtoehto m\u00e4\u00e4ritt\u00e4\u00e4, n\u00e4ytet\u00e4\u00e4nk\u00f6 \"Tarkista\"-painike kaikissa kysymyksiss\u00e4.",
+          "default": true
         },
         {
-          "label": "\"Näytä vastaus\"-painike",
-          "description": "Ota käyttöön kaikissa kysymyksissä, ei yhdessäkään, tai jätä tyhjäksi käyttääksesi tehtäväkohtaisia asetuksia",
+          "label": "Ohita \"N\u00e4yt\u00e4 ratkaisu\" -painike",
+          "description": "T\u00e4m\u00e4 vaihtoehto m\u00e4\u00e4ritt\u00e4\u00e4, n\u00e4ytet\u00e4\u00e4nk\u00f6 \"N\u00e4yt\u00e4 ratkaisu\" -painike kaikissa kysymyksiss\u00e4, poistetaanko se k\u00e4yt\u00f6st\u00e4 kaikissa kysymyksiss\u00e4 vai m\u00e4\u00e4ritet\u00e4\u00e4nk\u00f6 se jokaiselle kysymykselle erikseen.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Käytössä kaikissa"
+              "label": "K\u00e4yt\u00f6ss\u00e4"
             },
             {
-              "label": "Pois käytöstä"
+              "label": "Vammaiset"
             }
           ]
         },
         {
-          "label": "\"Yritä uudelleen\"-painike",
-          "description": "Ota käyttöön kaikissa kysymyksissä, ei yhdessäkään, tai jätä tyhjäksi käyttääksesi tehtäväkohtaisia asetuksia.",
+          "label": "Ohita \"Retry\" -painike",
+          "description": "T\u00e4m\u00e4 vaihtoehto m\u00e4\u00e4ritt\u00e4\u00e4, n\u00e4ytet\u00e4\u00e4nk\u00f6 \"Yrit\u00e4 uudelleen\" -painike kaikille kysymyksille, poistetaanko se k\u00e4yt\u00f6st\u00e4 vai m\u00e4\u00e4ritet\u00e4\u00e4nk\u00f6 se jokaiselle kysymykselle erikseen.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Käytössä kaikissa"
+              "label": "K\u00e4yt\u00f6ss\u00e4"
             },
             {
-              "label": "Pois käytöstä"
+              "label": "Vammaiset"
             }
           ]
         }

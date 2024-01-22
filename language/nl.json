@@ -4,19 +4,34 @@
       "label": "Quiz inleiding",
       "fields": [
         {
-          "label": "Toon inleiding"
+          "label": "Inleiding weergeven"
         },
         {
           "label": "Titel",
-          "description": "Deze titel zal boven de inleidende tekst worden getoond."
+          "description": "Deze titel wordt boven de introductietekst weergegeven.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Inleidende tekst",
-          "description": "Deze tekst zal worden getoond voordat de quiz begint."
+          "label": "Inleiding tekst",
+          "description": "Deze tekst zal getoond worden voor de test begint.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Tekst van \"Start\"-knop",
-          "default": "Start quiz"
+          "label": "Tekst startknop",
+          "default": "Start Quiz"
         },
         {
           "label": "Achtergrondafbeelding",
@@ -26,23 +41,25 @@
     },
     {
       "label": "Achtergrondafbeelding",
-      "description": "Een optionele achtergrondafbeelding voor de vragenreeks."
+      "description": "Een optionele achtergrondafbeelding voor de vragenset."
     },
     {
       "label": "Voortgangsindicator",
-      "description": "Stijl van voortgangsindicator van de vragenreeks.",
+      "description": "Stijl voortgangsindicator voor vragen instellen.",
       "options": [
         {
-          "label": "Tekstueel"
+          "label": "Tekst"
         },
         {
-          "label": "Punten"
+          "label": "Stippen"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
       "label": "Slagingspercentage",
-      "description": "Percentage van totale score dat vereist is om te slagen voor quiz."
+      "description": "Percentage van de totaalscore vereist voor het slagen voor de test.",
+      "default": 50
     },
     {
       "label": "Vragen",
@@ -51,112 +68,131 @@
           "label": "Standaard"
         },
         {
-          "label": "Tekstueel"
+          "label": "Tekst"
         }
       ],
-      "entity": "vraag",
+      "entity": "question",
       "field": {
         "label": "Type vraag",
-        "description": "Bibliotheek voor deze vraag."
+        "description": "Bibliotheek voor deze vraag.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Interface teksten in de quiz",
+      "label": "Interfaceteksten in quiz",
       "fields": [
         {
-          "label": "Tekst van \"Terug\"-knop",
-          "default": "Vorige vraag"
+          "label": "Terug knop",
+          "default": "Previous question"
         },
         {
-          "label": "Tekst van \"Volgende\"-knop",
-          "default": "Volgende vraag"
+          "label": "Volgende knop",
+          "default": "Next question"
         },
         {
-          "label": "Tekst van \"Afsluiten\"-knop",
-          "default": "Stoppen"
+          "label": "Knop be\u00ebindigen",
+          "default": "Finish"
         },
         {
-          "label": "Tekst voor \"Verzend\"-knop",
-          "default": "Verzend"
+          "label": "Knop indienen",
+          "default": "Submit"
         },
         {
-          "label": "Tekst bij voortgang",
-          "description": "Deze tekst wordt gebruikt als 'Tekst' als voortgangsindicator is geselecteerd.",
-          "default": "Vraag: @current van @total vragen"
+          "label": "Voortgang tekst",
+          "description": "Tekst die wordt gebruikt als tekstuele voortgang is geselecteerd.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
           "label": "Label om naar een bepaalde vraag te springen",
-          "description": "Je moet de plaatsaanduiding '%d' gebruiken in plaats van het vraagnummer, en %total in plaats van het totaal aantal vragen.",
-          "default": "Vraag %d van %total"
+          "description": "Je moet de placeholder '%d' gebruiken in plaats van het vraagnummer en %total in plaats van het totale aantal vragen.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Label van vraag in copyrightdialoog",
-          "default": "Vraag"
+          "label": "Copyright dialoog vraag label",
+          "default": "Question"
         },
         {
-          "label": "Schermlezer voortgang",
-          "description": "Je mag @current gebruiken en @total als vraagvariabelen",
-          "default": "Vraag @current van @total"
+          "label": "Lees vooruitgang",
+          "description": "Mag @stroom- en @totaal-vragenvariabelen gebruiken",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Tekst van niet-beantwoorde vraag",
-          "default": "Niet-beantwoord"
+          "label": "Tekst onbeantwoorde vraag",
+          "default": "Unanswered"
         },
         {
-          "label": "Tekst van beantwoorde vraag",
-          "default": "Beantwoord"
+          "label": "Beantwoorde vraag tekst",
+          "default": "Answered"
         },
         {
-          "label": "Tekst van huidige vraag",
-          "default": "Huidige vraag"
+          "label": "Huidige vraagtekst",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Navigatie label voor voorlezers",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Achterwaarts navigeren uitschakelen",
-      "description": "Deze optie staat je alleen toe voorwaarts te navigeren in de vragenreeks"
+      "label": "Achterwaartse navigatie uitschakelen",
+      "description": "Met deze optie kunt u alleen verdergaan in Vragenreeks",
+      "default": false
     },
     {
-      "label": "Vragen willekeurig ordenen",
-      "description": "Vragen bij weergave in willekeurige volgorde inschakelen."
+      "label": "Vragen randomiseren",
+      "description": "Inschakelen om de volgorde van de weergegeven vragen willekeurig te maken.",
+      "default": false
     },
     {
-      "label": "Het aantal te tonen vragen:",
-      "description": "Creëer een willekeurig aantal vragen van het totaal."
+      "label": "Aantal vragen dat moet worden getoond:",
+      "description": "Maak een willekeurige reeks vragen uit het totaal."
     },
     {
       "label": "Quiz voltooid",
       "fields": [
         {
-          "label": "Toon de resultaten"
+          "label": "Resultaten weergeven",
+          "default": true
         },
         {
-          "label": "Toon \"Oplossing\"-knop"
+          "label": "Oplossingsknop weergeven",
+          "default": true
         },
         {
-          "label": "Toon \"Opnieuw\"-knop"
+          "label": "Knop Opnieuw proberen weergeven",
+          "default": true
         },
         {
           "label": "Geen resultaten bericht",
-          "description": "Getoonde tekst op de eindpagina wanneer \"Toon resultaten\" is uitgeschakeld",
-          "default": "Voltooid"
+          "description": "Tekst weergegeven op eindpagina wanneer \"Resultaten weergeven\" is uitgeschakeld",
+          "default": "Finished"
         },
         {
-          "label": "Feedback koptekst",
-          "default": "Je resultaat:",
-          "description": "Deze koptekst verschijnt aan het einde van de quiz wanneer de deelnemer alle vragen heeft beantwoord."
+          "label": "Feedback rubriek",
+          "default": "Your result:",
+          "description": "Deze hoofding zal aan het einde van de test getoond worden als de gebruiker alle vragen beantwoord heeft.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Score announcer",
-          "description": "This label will be used for announcing the final score to the user on the end screen",
+          "label": "Score-aankondiger",
+          "description": "Dit label wordt gebruikt om de eindscore aan de gebruiker aan te kondigen op het eindscherm.",
           "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Algehele feedback",
+          "label": "Algemene feedback",
           "fields": [
             {
               "widgets": [
@@ -164,17 +200,20 @@
                   "label": "Standaard"
                 }
               ],
-              "label": "Definieer aangepaste feedback voor elke scorereeks",
-              "description": "Voorbeeld: 0-20% Onvoldoende score, 21-91% Gemiddelde score, 91-100% Uitstekende score!",
-              "entity": "reeks",
+              "label": "Aangepaste feedback defini\u00ebren voor elk scorebereik",
+              "description": "Klik op de knop \"Bereik toevoegen\" om zoveel bereiken toe te voegen als je nodig hebt. Voorbeeld: 0-20% Slechte score, 21-91% Gemiddelde score, 91-100% Goede score!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Scorereeks"
+                    "label": "Scorebereik",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Feedback voor de gedefinieerde scorereeks",
+                    "default": 100
+                  },
+                  {
+                    "label": "Feedback voor gedefinieerd scorebereik",
                     "placeholder": "Vul de feedback in"
                   }
                 ]
@@ -186,71 +225,107 @@
           "label": "Oude feedback",
           "fields": [
             {
-              "label": "Begroeting bij een geslaagde quiz",
-              "description": "Deze tekst wordt boven de score getoond als de deelnemer de test met goed gevolg heeft afgelegd."
+              "label": "Quiz geslaagd groet",
+              "description": "Deze tekst zal boven de score getoond worden als de gebruiker geslaagd is voor de test.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Commentaar bij geslaagd",
-              "description": "Dit commentaar wordt getoond na de score als de deelnemer de test met goed gevolg heeft afgelegd."
+              "label": "Commentaar geslaagd",
+              "description": "Deze opmerking zal getoond worden na de score als de gebruiker geslaagd is voor de test.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Titel bij niet behaalde quiz",
-              "description": "Deze tekst wordt boven de score getoond als de deelnemer de test niet heeft gehaald."
+              "label": "Quiz mislukte titel",
+              "description": "Deze tekst zal boven de score getoond worden als de gebruiker niet geslaagd is voor de test.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Commentaar bij niet behaald",
-              "description": "Dit commentaar wordt getoond na de score als de deelnemer de test niet heeft gehaald."
+              "label": "Geen commentaar",
+              "description": "Deze opmerking zal getoond worden na de score als de gebruiker niet geslaagd is voor de test.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Label van \"Oplossing\"-knop",
-          "default": "Toon oplossing",
-          "description": "Tekst voor \"Oplossing\"-knop."
+          "label": "Oplossingsknop label",
+          "default": "Show solution",
+          "description": "Tekst voor de oplossingsknop."
         },
         {
-          "label": "Label van \"Opnieuw\"-knop",
-          "default": "Opnieuw",
-          "description": "Tekst voor \"Opnieuw\"-knop."
+          "label": "Label knop Opnieuw proberen",
+          "default": "Retry",
+          "description": "Tekst voor de knop Opnieuw proberen."
         },
         {
-          "label": "Tekst voor \"Stoppen\"-knop",
-          "default": "Stoppen"
+          "label": "Knoptekst be\u00ebindigen",
+          "default": "Finish"
         },
         {
-          "label": "Tekst van \"Verzend\"-knop",
-          "default": "Verzend"
+          "label": "Knoptekst indienen",
+          "default": "Submit"
         },
         {
-          "label": "Toon video voor de quizresultaten"
+          "label": "Video weergeven voor de testresultaten"
         },
         {
-          "label": "Schakel \"Sla video over\"-knop in"
+          "label": "Videoknop overslaan inschakelen"
         },
         {
-          "label": "Label van \"Sla video over\"-knop",
-          "default": "Video overslaan"
+          "label": "Label knop video overslaan",
+          "default": "Skip video"
         },
         {
-          "label": "Video bij een geslaagde quiz",
-          "description": "Deze video wordt afgespeeld als de deelnemer de test met succes heeft afgerond."
+          "label": "Video geslaagd",
+          "description": "Deze video wordt afgespeeld als de gebruiker geslaagd is voor de test."
         },
         {
-          "label": "Video bij een niet behaalde quiz",
-          "description": "Deze video wordt afgespeeld als de deelnemer de test niet heeft gehaald."
+          "label": "Mislukte video",
+          "description": "Deze video wordt afgespeeld als de gebruiker zakt voor de test."
         }
       ]
     },
     {
-      "label": "Instellingen voor \"Toon oplossing\" en \"Opnieuw\"-knoppen",
+      "label": "Instellingen voor \"Controleren\", \"Oplossing weergeven\" en \"Opnieuw proberen\".",
       "fields": [
         {
-          "label": "Toon \"Controleer\"-knoppen",
-          "description": "Deze optie bepaalt of de knop \"Controleer\" wordt getoond voor alle vragen."
+          "label": "Toon knoppen \"Controleren",
+          "description": "Deze optie bepaalt of de knop \"Controleren\" voor alle vragen wordt weergegeven.",
+          "default": true
         },
         {
-          "label": "Overschrijf \"Toon oplossing\"-knop",
-          "description": "Deze optie bepaalt of de \"Toon oplossing\"-knop voor alle vragen wordt getoond, uitgeschakeld of voor iedere vraag afzonderlijk wordt geconfigureerd.",
+          "label": "De knop \"Oplossing weergeven\" opheffen",
+          "description": "Deze optie bepaalt of de knop \"Oplossing tonen\" getoond wordt voor alle vragen, uitgeschakeld wordt voor alle vragen of geconfigureerd wordt voor elke vraag afzonderlijk.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
               "label": "Ingeschakeld"
@@ -261,8 +336,15 @@
           ]
         },
         {
-          "label": "Overschrijf \"Opnieuw\"-knop",
-          "description": "Deze optie bepaalt of de \"Opnieuw\"-knop voor alle vragen wordt getoond, uitgeschakeld of voor iedere vraag afzonderlijk wordt geconfigureerd.",
+          "label": "Knop \"Opnieuw proberen\" opheffen",
+          "description": "Deze optie bepaalt of de knop \"Opnieuw proberen\" voor alle vragen wordt weergegeven, voor alle vragen wordt uitgeschakeld of voor elke vraag afzonderlijk wordt geconfigureerd.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
               "label": "Ingeschakeld"

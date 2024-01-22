@@ -1,181 +1,220 @@
 {
   "semantics": [
     {
-      "label": "Εισαγωγή κουίζ",
+      "label": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03c3\u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6",
       "fields": [
         {
-          "label": "Εμφάνιση εισαγωγής"
+          "label": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03c3\u03c4\u03b7\u03bd \u03bf\u03b8\u03cc\u03bd\u03b7"
         },
         {
-          "label": "Τίτλος",
-          "description": "Αυτός ο τίτλος θα εμφανίζεται πάνω από το εισαγωγικό κείμενο."
+          "label": "\u03a4\u03af\u03c4\u03bb\u03bf\u03c2",
+          "description": "\u0391\u03c5\u03c4\u03cc\u03c2 \u03bf \u03c4\u03af\u03c4\u03bb\u03bf\u03c2 \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03b5\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03b9\u03ba\u03cc \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Εισαγωγικό κείμενο",
-          "description": "Αυτό το κείμενο θα εμφανίζεται πριν την έναρξη του κουίζ."
+          "label": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03b9\u03ba\u03cc \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf",
+          "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03c0\u03c1\u03b9\u03bd \u03b1\u03c0\u03cc \u03c4\u03b7\u03bd \u03ad\u03bd\u03b1\u03c1\u03be\u03b7 \u03c4\u03bf\u03c5 \u03ba\u03bf\u03c5\u03af\u03b6.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Ετικέτα κουμπιού έναρξης",
-          "default": "Έναρξη"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \u03ad\u03bd\u03b1\u03c1\u03be\u03b7\u03c2",
+          "default": "Start Quiz"
         },
         {
-          "label": "Εικόνα φόντου",
-          "description": "Μια εικόνα φόντου για την εισαγωγή (προαιρετικό)."
+          "label": "\u0395\u03b9\u03ba\u03cc\u03bd\u03b1 \u03c6\u03cc\u03bd\u03c4\u03bf\u03c5",
+          "description": "\u039c\u03b9\u03b1 \u03c0\u03c1\u03bf\u03b1\u03b9\u03c1\u03b5\u03c4\u03b9\u03ba\u03ae \u03b5\u03b9\u03ba\u03cc\u03bd\u03b1 \u03c6\u03cc\u03bd\u03c4\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03b5\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae."
         }
       ]
     },
     {
-      "label": "Εικόνα φόντου",
-      "description": "Μια εικόνα φόντου για τη συλλογή ερωτήσεων (προαιρετικό)."
+      "label": "\u0395\u03b9\u03ba\u03cc\u03bd\u03b1 \u03c6\u03cc\u03bd\u03c4\u03bf\u03c5",
+      "description": "\u039c\u03b9\u03b1 \u03c0\u03c1\u03bf\u03b1\u03b9\u03c1\u03b5\u03c4\u03b9\u03ba\u03ae \u03b5\u03b9\u03ba\u03cc\u03bd\u03b1 \u03c6\u03cc\u03bd\u03c4\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03c3\u03cd\u03bd\u03bf\u03bb\u03bf \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd."
     },
     {
-      "label": "Δείκτης προόδου",
-      "description": "Καθορισμός στυλ δείκτη προόδου.",
+      "label": "\u0394\u03b5\u03af\u03ba\u03c4\u03b7\u03c2 \u03c0\u03c1\u03bf\u03cc\u03b4\u03bf\u03c5",
+      "description": "\u0395\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03c0\u03bf\u03c5 \u03b8\u03ad\u03c4\u03b5\u03b9 \u03c3\u03c4\u03c5\u03bb \u03b4\u03b5\u03af\u03ba\u03c4\u03b7 \u03c0\u03c1\u03bf\u03cc\u03b4\u03bf\u03c5.",
       "options": [
         {
-          "label": "Κείμενο"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf"
         },
         {
-          "label": "Κουκίδες"
-        }
-      ]
-    },
-    {
-      "label": "Ποσοστό επιτυχίας",
-      "description": "Απαιτούμενο ποσοστό συνολικής βαθμολογίας για να θεωρηθεί επιτυχημένη η προσπάθεια."
-    },
-    {
-      "label": "Ερωτήσεις",
-      "widgets": [
-        {
-          "label": "Βασικό"
-        },
-        {
-          "label": "Κείμενο"
+          "label": "\u039a\u03bf\u03c5\u03ba\u03ba\u03af\u03b4\u03b5\u03c2"
         }
       ],
-      "entity": "ερωτηση",
+      "default": "dots"
+    },
+    {
+      "label": "\u03a0\u03bf\u03c3\u03bf\u03c3\u03c4\u03cc \u03b5\u03c0\u03b9\u03c4\u03c5\u03c7\u03af\u03b1\u03c2",
+      "description": "\u03a0\u03bf\u03c3\u03bf\u03c3\u03c4\u03cc \u03c4\u03b7\u03c2 \u03c3\u03c5\u03bd\u03bf\u03bb\u03b9\u03ba\u03ae\u03c2 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03c2 \u03c0\u03bf\u03c5 \u03b1\u03c0\u03b1\u03b9\u03c4\u03b5\u03af\u03c4\u03b1\u03b9 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03b5\u03c0\u03b9\u03c4\u03c5\u03c7\u03af\u03b1 \u03c3\u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6.",
+      "default": 50
+    },
+    {
+      "label": "\u0395\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2",
+      "widgets": [
+        {
+          "label": "\u03a0\u03c1\u03bf\u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae"
+        },
+        {
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf"
+        }
+      ],
+      "entity": "question",
       "field": {
-        "label": "Τύπος ερώτησης",
-        "description": "Βιβλιοθήκη για αυτή την ερώτηση."
+        "label": "\u03a4\u03cd\u03c0\u03bf\u03c2 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7\u03c2",
+        "description": "\u0392\u03b9\u03b2\u03bb\u03b9\u03bf\u03b8\u03ae\u03ba\u03b7 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03b1\u03c5\u03c4\u03ae.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Κείμενα διεπαφής για το κουίζ",
+      "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03b1 \u03b4\u03b9\u03b5\u03c0\u03b1\u03c6\u03ae\u03c2 \u03c3\u03b5 \u03ba\u03bf\u03c5\u03af\u03b6",
       "fields": [
         {
-          "label": "Κουμπί για \"προηγούμενο\"",
-          "default": "Προηγούμενη"
+          "label": "\u03a0\u03af\u03c3\u03c9 \u03ba\u03bf\u03c5\u03bc\u03c0\u03af",
+          "default": "Previous question"
         },
         {
-          "label": "Κουμπί για \"επόμενο\"",
-          "default": "Επόμενη"
+          "label": "\u0395\u03c0\u03cc\u03bc\u03b5\u03bd\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af",
+          "default": "Next question"
         },
         {
-          "label": "Κουμπί ολοκλήρωσης",
-          "default": "Ολοκλήρωση"
+          "label": "\u039a\u03bf\u03c5\u03bc\u03c0\u03af Finish",
+          "default": "Finish"
         },
         {
-          "label": "Κουμπί υποβολής",
-          "default": "Υποβολή"
+          "label": "\u039a\u03bf\u03c5\u03bc\u03c0\u03af \u03c5\u03c0\u03bf\u03b2\u03bf\u03bb\u03ae\u03c2",
+          "default": "Submit"
         },
         {
-          "label": "Κείμενο προόδου",
-          "description": "Κείμενο που χρησιμοποιείται, εάν έχει επιλεγεί το κειμενικό στυλ εμφάνισης της προόδου.",
-          "default": "Ερώτηση: @current από @total ερωτήσεις"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03c0\u03c1\u03bf\u03cc\u03b4\u03bf\u03c5",
+          "description": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03c0\u03bf\u03c5 \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03b5\u03af\u03c4\u03b1\u03b9 \u03b5\u03ac\u03bd \u03ad\u03c7\u03b5\u03b9 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03b5\u03af \u03b7 \u03c0\u03c1\u03cc\u03bf\u03b4\u03bf\u03c2 \u03bc\u03b5 \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Ετικέτα μετάβασης σε συγκεκριμένη ερώτηση",
-          "description": "Χρειάζεται να χρησιμοποιήσετε το %d αντί για τον αριθμό της ερώτησης και το %total αντί για τον συνολικό αριθμό των ερωτήσεων.",
-          "default": "Ερώτηση %d από %total"
+          "label": "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03bc\u03b5\u03c4\u03ac\u03b2\u03b1\u03c3\u03b7 \u03c3\u03b5 \u03c3\u03c5\u03b3\u03ba\u03b5\u03ba\u03c1\u03b9\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7",
+          "description": "\u03a0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03ae\u03c3\u03b5\u03c4\u03b5 \u03c4\u03bf \u03c3\u03cd\u03bc\u03b2\u03bf\u03bb\u03bf \u03c4\u03bf\u03c0\u03bf\u03b8\u03ad\u03c4\u03b7\u03c3\u03b7\u03c2 '%d' \u03b1\u03bd\u03c4\u03af \u03c4\u03bf\u03c5 \u03b1\u03c1\u03b9\u03b8\u03bc\u03bf\u03cd \u03c4\u03c9\u03bd \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd \u03ba\u03b1\u03b9 %total \u03b1\u03bd\u03c4\u03af \u03c4\u03bf\u03c5 \u03c3\u03c5\u03bd\u03bf\u03bb\u03b9\u03ba\u03bf\u03cd \u03b1\u03c1\u03b9\u03b8\u03bc\u03bf\u03cd \u03c4\u03c9\u03bd \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Ετικέτα διαλογικού παραθύρου Πνευματικών Δικαιωμάτων",
-          "default": "Ερώτηση"
+          "label": "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7\u03c2 \u03b4\u03b9\u03b1\u03bb\u03cc\u03b3\u03bf\u03c5 Copyright",
+          "default": "Question"
         },
         {
-          "label": "Πρόοδος για ακουστική υποβοήθηση",
-          "description": "Μπορούν να χρησιμοποιηθούν οι μεταβλητές @current και @total",
-          "default": "Ερώτηση @current από @total"
+          "label": "\u0394\u03b9\u03b1\u03b2\u03ac\u03b6\u03b5\u03b9 \u03c4\u03b7\u03bd \u03c0\u03c1\u03cc\u03bf\u03b4\u03bf \u03c4\u03bf\u03c5 \u03bf\u03bc\u03b9\u03bb\u03b7\u03c4\u03ae",
+          "description": "\u039c\u03c0\u03bf\u03c1\u03b5\u03af \u03bd\u03b1 \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03ae\u03c3\u03b5\u03b9 \u03c4\u03b9\u03c2 \u03bc\u03b5\u03c4\u03b1\u03b2\u03bb\u03b7\u03c4\u03ad\u03c2 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd @current \u03ba\u03b1\u03b9 @total",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Κείμενο για μη απαντημένη ερώτηση",
-          "default": "Δεν απαντήθηκε"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b1\u03bd\u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c4\u03b7\u03c2 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7\u03c2",
+          "default": "Unanswered"
         },
         {
-          "label": "Κείμενο για απαντημένη ερώτηση",
-          "default": "Απαντήθηκε"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b1\u03c0\u03b1\u03bd\u03c4\u03b7\u03bc\u03ad\u03bd\u03b7\u03c2 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7\u03c2",
+          "default": "Answered"
         },
         {
-          "label": "Κείμενο τρέχουσας ερώτησης",
-          "default": "Τρέχουσα ερώτηση"
+          "label": "\u03a4\u03c1\u03ad\u03c7\u03bf\u03bd \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7\u03c2",
+          "default": "Current question"
         },
         {
-          "label": "Ετικέτα πλοήγησης για αναγνώστες",
-          "default": "Ερωτήσεις"
+          "label": "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03c0\u03bb\u03bf\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03b3\u03b9\u03b1 \u03c4\u03bf\u03c5\u03c2 \u03bf\u03bc\u03b9\u03bb\u03b7\u03c4\u03ad\u03c2 \u03b1\u03bd\u03ac\u03b3\u03bd\u03c9\u03c3\u03b7\u03c2",
+          "default": "Questions"
         }
       ]
     },
     {
-      "label": "Απενεργοποίηση πλοήγησης προς τα πίσω",
-      "description": "Αυτή η επιλογή επιτρέπει τη μετάβαση μόνο στην επόμενη ερώτηση"
+      "label": "\u0391\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7 \u03c0\u03bb\u03bf\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c0\u03c1\u03bf\u03c2 \u03c4\u03b1 \u03c0\u03af\u03c3\u03c9",
+      "description": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03b8\u03b1 \u03c3\u03b1\u03c2 \u03b5\u03c0\u03b9\u03c4\u03c1\u03ad\u03c8\u03b5\u03b9 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c7\u03c9\u03c1\u03ae\u03c3\u03b5\u03c4\u03b5 \u03bc\u03cc\u03bd\u03bf \u03c3\u03c4\u03bf \u03c3\u03b5\u03c4 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd",
+      "default": false
     },
     {
-      "label": "Τυχαιοποίηση ερωτήσεων",
-      "description": "Ενεργοποίηση της τυχαίας σειράς εμφάνισης των ερωτήσεων."
+      "label": "\u03a4\u03c5\u03c7\u03b1\u03af\u03b1 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd",
+      "description": "\u0395\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03ae\u03c3\u03c4\u03b5 \u03c4\u03b7\u03bd \u03c4\u03c5\u03c7\u03b1\u03af\u03b1 \u03c3\u03b5\u03b9\u03c1\u03ac \u03c4\u03c9\u03bd \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd \u03c3\u03c4\u03b7\u03bd \u03bf\u03b8\u03cc\u03bd\u03b7.",
+      "default": false
     },
     {
-      "label": "Αριθμός ερωτήσεων προς εμφάνιση:",
-      "description": "Δημιουργήστε μια τυχαία σειρά ερωτήσεων από το σύνολο."
+      "label": "\u0391\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd \u03c0\u03bf\u03c5 \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03bf\u03cd\u03bd:",
+      "description": "\u0394\u03b7\u03bc\u03b9\u03bf\u03c5\u03c1\u03b3\u03ae\u03c3\u03c4\u03b5 \u03bc\u03b9\u03b1 \u03c4\u03c5\u03c7\u03b1\u03af\u03b1 \u03c0\u03b1\u03c1\u03c4\u03af\u03b4\u03b1 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c9\u03bd \u03b1\u03c0\u03cc \u03c4\u03bf \u03c3\u03cd\u03bd\u03bf\u03bb\u03bf."
     },
     {
-      "label": "Ολοκλήρωση κουίζ",
+      "label": "\u03a4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6 \u03c4\u03b5\u03bb\u03b5\u03af\u03c9\u03c3\u03b5",
       "fields": [
         {
-          "label": "Εμφάνιση αποτελεσμάτων"
+          "label": "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03b5\u03c3\u03bc\u03ac\u03c4\u03c9\u03bd",
+          "default": true
         },
         {
-          "label": "Εμφάνιση κουμπιού λύσης"
+          "label": "\u039a\u03bf\u03c5\u03bc\u03c0\u03af \u03b5\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7\u03c2 \u03bb\u03cd\u03c3\u03b7\u03c2",
+          "default": true
         },
         {
-          "label": "Εμφάνιση κουμπιού επανάληψης"
+          "label": "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \u03b5\u03c0\u03b1\u03bd\u03ac\u03bb\u03b7\u03c8\u03b7\u03c2",
+          "default": true
         },
         {
-          "label": "Μήνυμα \"Χωρίς αποτελέσματα\"",
-          "description": "Κείμενο που θα εμφανίζεται στο τέλος της σελίδας όταν το κουμπί \"Αποτελέσματα\" είναι απενεργοποιημένο",
-          "default": "Ολοκληρώθηκε"
+          "label": "\u0394\u03b5\u03bd \u03c5\u03c0\u03ac\u03c1\u03c7\u03b5\u03b9 \u03bc\u03ae\u03bd\u03c5\u03bc\u03b1 \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03b5\u03c3\u03bc\u03ac\u03c4\u03c9\u03bd",
+          "description": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03c0\u03bf\u03c5 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03c3\u03c4\u03b7\u03bd \u03c4\u03b5\u03bb\u03b9\u03ba\u03ae \u03c3\u03b5\u03bb\u03af\u03b4\u03b1 \u03cc\u03c4\u03b1\u03bd \u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \"\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03b5\u03c3\u03bc\u03ac\u03c4\u03c9\u03bd\" \u03b5\u03af\u03bd\u03b1\u03b9 \u03b1\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b7",
+          "default": "Finished"
         },
         {
-          "label": "Επικεφαλίδα ανατροφοδότησης",
-          "default": "Η βαθμολογία σου:",
-          "description": "Αυτή η επικεφαλίδα θα εμφανίζεται στο τέλος του κουίζ όταν ο χρήστης θα έχει απαντήσει σε όλες τις ερωτήσεις."
+          "label": "\u0395\u03c0\u03b9\u03ba\u03b5\u03c6\u03b1\u03bb\u03af\u03b4\u03b1 \u03b1\u03bd\u03b1\u03c4\u03c1\u03bf\u03c6\u03bf\u03b4\u03cc\u03c4\u03b7\u03c3\u03b7\u03c2",
+          "default": "Your result:",
+          "description": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c0\u03b9\u03ba\u03b5\u03c6\u03b1\u03bb\u03af\u03b4\u03b1 \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03c3\u03c4\u03bf \u03c4\u03ad\u03bb\u03bf\u03c2 \u03c4\u03bf\u03c5 \u03ba\u03bf\u03c5\u03af\u03b6 \u03cc\u03c4\u03b1\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03ad\u03c7\u03b5\u03b9 \u03b1\u03c0\u03b1\u03bd\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c3\u03b5 \u03cc\u03bb\u03b5\u03c2 \u03c4\u03b9\u03c2 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Εκφωνητής βαθμολογίας",
-          "description": "Αυτή η ετικέτα θα χρησιμοποιηθεί για την ανακοίνωση της τελικής βαθμολογίας στον χρήστη στην τελική οθόνη",
-          "default": "Έχετε @finals από @totals πόντους"
+          "label": "\u0395\u03ba\u03c6\u03c9\u03bd\u03b7\u03c4\u03ae\u03c2 \u03c3\u03ba\u03bf\u03c1",
+          "description": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b8\u03b1 \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03b7\u03b8\u03b5\u03af \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03b1\u03bd\u03b1\u03ba\u03bf\u03af\u03bd\u03c9\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c4\u03b5\u03bb\u03b9\u03ba\u03bf\u03cd \u03c3\u03ba\u03bf\u03c1 \u03c3\u03c4\u03bf\u03bd \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7 \u03c3\u03c4\u03b7\u03bd \u03c4\u03b5\u03bb\u03b9\u03ba\u03ae \u03bf\u03b8\u03cc\u03bd\u03b7.",
+          "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Συνολική ανατροφοδότηση",
+          "label": "\u03a3\u03c5\u03bd\u03bf\u03bb\u03b9\u03ba\u03ae \u03b1\u03bd\u03b1\u03c4\u03c1\u03bf\u03c6\u03bf\u03b4\u03cc\u03c4\u03b7\u03c3\u03b7",
           "fields": [
             {
               "widgets": [
                 {
-                  "label": "Βασικό"
+                  "label": "\u03a0\u03c1\u03bf\u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae"
                 }
               ],
-              "label": "Χαρακτηρισμός κάθε κλίμακας βαθμολογίας",
-              "description": "Παράδειγμα: 0-20% Χαμηλή βαθμολογία, 21-91% Μέτρια βαθμολογία, 91-100% Εξαιρετική βαθμολογία!",
-              "entity": "κλιμακας",
+              "label": "\u039f\u03c1\u03af\u03c3\u03c4\u03b5 \u03c0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b1\u03bd\u03b1\u03c4\u03c1\u03bf\u03c6\u03bf\u03b4\u03cc\u03c4\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03bf\u03c0\u03bf\u03b9\u03bf\u03b4\u03ae\u03c0\u03bf\u03c4\u03b5 \u03b5\u03cd\u03c1\u03bf\u03c2 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03c2",
+              "description": "\u039a\u03ac\u03bd\u03c4\u03b5 \u03ba\u03bb\u03b9\u03ba \u03c3\u03c4\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af \"Add range\" (\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7 \u03b5\u03cd\u03c1\u03bf\u03c5\u03c2) \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c3\u03b8\u03ad\u03c3\u03b5\u03c4\u03b5 \u03cc\u03c3\u03b1 \u03b5\u03cd\u03c1\u03b7 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5. \u03a0\u03b1\u03c1\u03ac\u03b4\u03b5\u03b9\u03b3\u03bc\u03b1: 0-20% \u039a\u03b1\u03ba\u03ae \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1, 21-91% \u039c\u03ad\u03c3\u03b7 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1, 91-100% \u039c\u03b5\u03b3\u03ac\u03bb\u03b7 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Βαθμολογία"
+                    "label": "\u0395\u03cd\u03c1\u03bf\u03c2 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03c2",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Χαρακτηρισμός",
-                    "placeholder": "Συμπληρώστε τον χαρακτηρισμό"
+                    "default": 100
+                  },
+                  {
+                    "label": "\u0391\u03bd\u03b1\u03c4\u03c1\u03bf\u03c6\u03bf\u03b4\u03cc\u03c4\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03ba\u03b1\u03b8\u03bf\u03c1\u03b9\u03c3\u03bc\u03ad\u03bd\u03bf \u03b5\u03cd\u03c1\u03bf\u03c2 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03c2",
+                    "placeholder": "\u03a3\u03c5\u03bc\u03c0\u03bb\u03b7\u03c1\u03ce\u03c3\u03c4\u03b5 \u03c4\u03b1 \u03c3\u03c7\u03cc\u03bb\u03b9\u03b1"
                   }
                 ]
               }
@@ -183,92 +222,135 @@
           ]
         },
         {
-          "label": "Ανατροφοδότηση",
+          "label": "\u03a0\u03b1\u03bb\u03b9\u03ac \u03b1\u03bd\u03b1\u03c4\u03c1\u03bf\u03c6\u03bf\u03b4\u03cc\u03c4\u03b7\u03c3\u03b7",
           "fields": [
             {
-              "label": "Μήνυμα επιτυχούς ολοκλήρωσης",
-              "description": "Αυτό το κείμενο θα εμφανίζεται πάνω από τη βαθμολογία εάν ο χρήστης έχει ολοκληρώσει επιτυχώς το κουίζ."
+              "label": "Quiz \u03c0\u03ad\u03c1\u03b1\u03c3\u03b5 \u03c7\u03b1\u03b9\u03c1\u03b5\u03c4\u03b9\u03c3\u03bc\u03cc",
+              "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03b7 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03ad\u03c7\u03b5\u03b9 \u03c0\u03b5\u03c1\u03ac\u03c3\u03b5\u03b9 \u03b5\u03c0\u03b9\u03c4\u03c5\u03c7\u03ce\u03c2 \u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Σχόλιο επιτυχούς ολοκλήρωσης",
-              "description": "Αυτό το σχόλιο θα εμφανίζεται μετά τη βαθμολογία εάν ο χρήστης έχει ολοκληρώσει επιτυχώς το κουίζ."
+              "label": "\u03a0\u03ad\u03c1\u03b1\u03c3\u03b5 \u03c3\u03c7\u03cc\u03bb\u03b9\u03bf",
+              "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03c3\u03c7\u03cc\u03bb\u03b9\u03bf \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03bc\u03b5\u03c4\u03ac \u03c4\u03b7 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03ad\u03c7\u03b5\u03b9 \u03c0\u03b5\u03c1\u03ac\u03c3\u03b5\u03b9 \u03b5\u03c0\u03b9\u03c4\u03c5\u03c7\u03ce\u03c2 \u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Μήνυμα ανεπιτυχούς ολοκλήρωσης",
-              "description": "Αυτό το κείμενο θα εμφανίζεται πριν από τη βαθμολογία εάν ο χρήστης έχει δεν ολοκληρώσει επιτυχώς το κουίζ."
+              "label": "\u0391\u03c0\u03bf\u03c4\u03c5\u03c7\u03b7\u03bc\u03ad\u03bd\u03bf\u03c2 \u03c4\u03af\u03c4\u03bb\u03bf\u03c2 \u03ba\u03bf\u03c5\u03af\u03b6",
+              "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03b7 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03ad\u03c7\u03b5\u03b9 \u03b1\u03c0\u03bf\u03c4\u03cd\u03c7\u03b5\u03b9 \u03c3\u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Σχόλιο ανεπιτυχούς ολοκλήρωσης",
-              "description": "Αυτό το σχόλιο θα εμφανίζεται μετά τη βαθμολογία εάν ο χρήστης δεν έχει ολοκληρώσει επιτυχώς το κουίζ."
+              "label": "\u0391\u03c0\u03bf\u03c4\u03c5\u03c7\u03b7\u03bc\u03ad\u03bd\u03bf \u03c3\u03c7\u03cc\u03bb\u03b9\u03bf",
+              "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03c3\u03c7\u03cc\u03bb\u03b9\u03bf \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03bc\u03b5\u03c4\u03ac \u03c4\u03b7 \u03b2\u03b1\u03b8\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03ad\u03c7\u03b5\u03b9 \u03b1\u03c0\u03bf\u03c4\u03cd\u03c7\u03b5\u03b9 \u03c3\u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Ετικέτα κουμπιού εμφάνισης λύσης",
-          "default": "Λύση",
-          "description": "Κείμενο για το κουμπί εμφάνισης λύσης."
+          "label": "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \u03bb\u03cd\u03c3\u03b7\u03c2",
+          "default": "Show solution",
+          "description": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b3\u03b9\u03b1 \u03c4\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af \u03bb\u03cd\u03c3\u03b7\u03c2."
         },
         {
-          "label": "Ετικέτα κουμπιού νέας προσπάθειας",
-          "default": "Επανάληψη",
-          "description": "Κείμενο για το κουμπί νέας προσπάθειας."
+          "label": "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \u03b5\u03c0\u03b1\u03bd\u03ac\u03bb\u03b7\u03c8\u03b7\u03c2",
+          "default": "Retry",
+          "description": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b3\u03b9\u03b1 \u03c4\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af \u03b5\u03c0\u03b1\u03bd\u03ac\u03bb\u03b7\u03c8\u03b7\u03c2."
         },
         {
-          "label": "Ετικέτα κουμπιού ολοκλήρωσης",
-          "default": "Ολοκλήρωση"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd Finish",
+          "default": "Finish"
         },
         {
-          "label": "Ετικέτα κουμπιού υποβολής",
-          "default": "Υποβολή"
+          "label": "\u039a\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \u03c5\u03c0\u03bf\u03b2\u03bf\u03bb\u03ae\u03c2",
+          "default": "Submit"
         },
         {
-          "label": "Εμφάνιση βίντεο πριν τα αποτελέσματα του κουίζ"
+          "label": "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03b2\u03af\u03bd\u03c4\u03b5\u03bf \u03c0\u03c1\u03b9\u03bd \u03b1\u03c0\u03cc \u03c4\u03b1 \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03ad\u03c3\u03bc\u03b1\u03c4\u03b1 \u03c4\u03bf\u03c5 \u03ba\u03bf\u03c5\u03af\u03b6"
         },
         {
-          "label": "Ενεργοποίηση κουμπιού παράβλεψης βίντεο"
+          "label": "\u0395\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \u03c0\u03b1\u03c1\u03ac\u03bb\u03b5\u03b9\u03c8\u03b7\u03c2 \u03b2\u03af\u03bd\u03c4\u03b5\u03bf"
         },
         {
-          "label": "Ετικέτα κουμπιού παράβλεψης βίντεο",
-          "default": "Παράβλεψη"
+          "label": "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd Skip video",
+          "default": "Skip video"
         },
         {
-          "label": "Βίντεο για επιτυχημένη προσπάθεια",
-          "description": "Αναπαραγωγή του βίντεο εάν ο χρήστης ολοκληρώσει επιτυχώς το κουίζ."
+          "label": "\u03a0\u03b5\u03c1\u03b1\u03c3\u03bc\u03ad\u03bd\u03bf \u03b2\u03af\u03bd\u03c4\u03b5\u03bf",
+          "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03b2\u03af\u03bd\u03c4\u03b5\u03bf \u03b8\u03b1 \u03b1\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03c7\u03b8\u03b5\u03af \u03b1\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03c0\u03b5\u03c1\u03ac\u03c3\u03b5\u03b9 \u03b5\u03c0\u03b9\u03c4\u03c5\u03c7\u03ce\u03c2 \u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6."
         },
         {
-          "label": "Βίντεο για ανεπιτυχή προσπάθεια",
-          "description": "Αναπαραγωγή του βίντεο εάν ο χρήστης δεν ολοκληρώσει επιτυχώς το κουίζ."
+          "label": "\u0392\u03af\u03bd\u03c4\u03b5\u03bf \u03b1\u03c0\u03bf\u03c4\u03c5\u03c7\u03af\u03b1\u03c2",
+          "description": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03b2\u03af\u03bd\u03c4\u03b5\u03bf \u03b8\u03b1 \u03b1\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03c7\u03b8\u03b5\u03af \u03b5\u03ac\u03bd \u03bf \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03b1\u03c0\u03bf\u03c4\u03cd\u03c7\u03b5\u03b9 \u03c3\u03c4\u03bf \u03ba\u03bf\u03c5\u03af\u03b6."
         }
       ]
     },
     {
-      "label": "Ρυθμίσεις κουμπιών \"Λύση\" και \"Επανάληψη\"",
+      "label": "\u03a1\u03c5\u03b8\u03bc\u03af\u03c3\u03b5\u03b9\u03c2 \u03b3\u03b9\u03b1 \"\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2\", \"\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03bb\u03cd\u03c3\u03b7\u03c2\" \u03ba\u03b1\u03b9 \"\u0395\u03c0\u03b1\u03bd\u03ac\u03bb\u03b7\u03c8\u03b7\"",
       "fields": [
         {
-          "label": "Εμφάνιση κουμπιού \"Έλεγχος\"",
-          "description": "Αυτή η επιλογή καθορίζει εάν το κουμπί \"Έλεγχος\" θα εμφανίζεται σε όλες τις ερωτήσεις."
+          "label": "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03ce\u03bd \"\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2\"",
+          "description": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ba\u03b1\u03b8\u03bf\u03c1\u03af\u03b6\u03b5\u03b9 \u03b1\u03bd \u03c4\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af \"\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2\" \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03b3\u03b9\u03b1 \u03cc\u03bb\u03b5\u03c2 \u03c4\u03b9\u03c2 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2.",
+          "default": true
         },
         {
-          "label": "Αντικατάσταση προεπιλεγμένων ρυθμίσεων κουμπιού \"Λύση\"",
-          "description": "Αυτή η επιλογή καθορίζει εάν το κουμπί \"Λύση\" θα εμφανίζεται σε όλες τις ερωτήσεις, εάν θα είναι απενεργοποιημένο για όλες τις ερωτήσεις ή εάν θα ρυθμίζεται για κάθε ερώτηση χωριστά.",
+          "label": "\u03a0\u03b1\u03c1\u03ac\u03ba\u03b1\u03bc\u03c8\u03b7 \u03c4\u03bf\u03c5 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \"\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03bb\u03cd\u03c3\u03b7\u03c2\"",
+          "description": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ba\u03b1\u03b8\u03bf\u03c1\u03af\u03b6\u03b5\u03b9 \u03b1\u03bd \u03c4\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af \"\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03bb\u03cd\u03c3\u03b7\u03c2\" \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03b3\u03b9\u03b1 \u03cc\u03bb\u03b5\u03c2 \u03c4\u03b9\u03c2 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2, \u03b1\u03bd \u03b8\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b1\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf \u03b3\u03b9\u03b1 \u03cc\u03bb\u03b5\u03c2 \u03ae \u03b1\u03bd \u03b8\u03b1 \u03c1\u03c5\u03b8\u03bc\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03b3\u03b9\u03b1 \u03ba\u03ac\u03b8\u03b5 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03be\u03b5\u03c7\u03c9\u03c1\u03b9\u03c3\u03c4\u03ac.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Ενεργοποιημένη"
+              "label": "\u0395\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf"
             },
             {
-              "label": "Απενεργοποιημένη"
+              "label": "\u0386\u03c4\u03bf\u03bc\u03b1 \u03bc\u03b5 \u03b5\u03b9\u03b4\u03b9\u03ba\u03ad\u03c2 \u03b1\u03bd\u03ac\u03b3\u03ba\u03b5\u03c2"
             }
           ]
         },
         {
-          "label": "Αντικατάσταση προεπιλεγμένων ρυθμίσεων κουμπιού \"Επανάληψη\"",
-          "description": "Αυτή η επιλογή καθορίζει εάν το κουμπί \"Επανάληψη\" θα εμφανίζεται σε όλες τις ερωτήσεις, εάν θα είναι απενεργοποιημένο για όλες τις ερωτήσεις ή εάν θα ρυθμίζεται για κάθε ερώτηση χωριστά.",
+          "label": "\u03a0\u03b1\u03c1\u03ac\u03ba\u03b1\u03bc\u03c8\u03b7 \u03c4\u03bf\u03c5 \u03ba\u03bf\u03c5\u03bc\u03c0\u03b9\u03bf\u03cd \"\u0395\u03c0\u03b1\u03bd\u03ac\u03bb\u03b7\u03c8\u03b7\"",
+          "description": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ba\u03b1\u03b8\u03bf\u03c1\u03af\u03b6\u03b5\u03b9 \u03b5\u03ac\u03bd \u03c4\u03bf \u03ba\u03bf\u03c5\u03bc\u03c0\u03af \"\u0395\u03c0\u03b1\u03bd\u03ac\u03bb\u03b7\u03c8\u03b7\" \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03b3\u03b9\u03b1 \u03cc\u03bb\u03b5\u03c2 \u03c4\u03b9\u03c2 \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2, \u03b8\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b1\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf \u03b3\u03b9\u03b1 \u03cc\u03bb\u03b5\u03c2 \u03ae \u03b8\u03b1 \u03c1\u03c5\u03b8\u03bc\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03b3\u03b9\u03b1 \u03ba\u03ac\u03b8\u03b5 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03be\u03b5\u03c7\u03c9\u03c1\u03b9\u03c3\u03c4\u03ac.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Ενεργοποιημένη"
+              "label": "\u0395\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf"
             },
             {
-              "label": "Απενεργοποιημένη"
+              "label": "\u0386\u03c4\u03bf\u03bc\u03b1 \u03bc\u03b5 \u03b5\u03b9\u03b4\u03b9\u03ba\u03ad\u03c2 \u03b1\u03bd\u03ac\u03b3\u03ba\u03b5\u03c2"
             }
           ]
         }

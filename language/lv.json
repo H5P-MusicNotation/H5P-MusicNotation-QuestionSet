@@ -1,180 +1,219 @@
 {
   "semantics": [
     {
-      "label": "Testa ievads",
+      "label": "Viktor\u012bnas ievads",
       "fields": [
         {
-          "label": "Parādīt ievadu"
+          "label": "Displeja ievads"
         },
         {
           "label": "Nosaukums",
-          "description": "Šis nosaukums tiks parādīts virs ievada teksta."
+          "description": "\u0160is virsraksts tiks par\u0101d\u012bts virs ievada teksta.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
           "label": "Ievada teksts",
-          "description": "Šis teksts tiks parādīts pirms testa sākuma."
+          "description": "\u0160is teksts tiks par\u0101d\u012bts pirms viktor\u012bnas s\u0101kuma.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Sākšanas pogas teksts",
-          "default": "Sākt testu"
+          "label": "S\u0101kuma pogas teksts",
+          "default": "Start Quiz"
         },
         {
-          "label": "Fona attēls",
-          "description": "Neobligāts fona attēls ievadam."
+          "label": "Fona att\u0113ls",
+          "description": "Neoblig\u0101ts ievades fona att\u0113ls."
         }
       ]
     },
     {
-      "label": "Fona attēls",
-      "description": "Neobligāts fona attēls jautājumu kopai."
+      "label": "Fona att\u0113ls",
+      "description": "Neoblig\u0101ts fona att\u0113ls jaut\u0101jumu komplektam."
     },
     {
-      "label": "Progresa indikators",
-      "description": "Jautājumu kopas progresa indikatora stils.",
+      "label": "Progresa r\u0101d\u012bt\u0101js",
+      "description": "Jaut\u0101jums iestat\u012bt progresa indikatora stilu.",
       "options": [
         {
-          "label": "Teksta"
+          "label": "Teksts"
         },
         {
-          "label": "Punkti"
-        }
-      ]
-    },
-    {
-      "label": "Nokārtošanas procents",
-      "description": "Kopējā rezultāta procents, kas jāsasniedz, lai nokārtotu pārbaudījumu."
-    },
-    {
-      "label": "Jautājumi",
-      "widgets": [
-        {
-          "label": "Pēc noklusējuma"
-        },
-        {
-          "label": "Teksta"
+          "label": "Dots"
         }
       ],
-      "entity": "jautājums",
+      "default": "dots"
+    },
+    {
+      "label": "Procentu\u0101lais v\u0113rt\u0113jums",
+      "description": "Procentu\u0101l\u0101 da\u013ca no kop\u0113j\u0101 punktu skaita, kas nepiecie\u0161ama, lai nok\u0101rtotu viktor\u012bnu.",
+      "default": 50
+    },
+    {
+      "label": "Jaut\u0101jumi",
+      "widgets": [
+        {
+          "label": "Noklus\u0113juma"
+        },
+        {
+          "label": "Teksts"
+        }
+      ],
+      "entity": "question",
       "field": {
-        "label": "Jautājuma veids",
-        "description": "Bibliotēka šim jautājumam."
+        "label": "Jaut\u0101juma veids",
+        "description": "Bibliot\u0113ka \u0161im jaut\u0101jumam.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Testa saskarnes teksti",
+      "label": "Saskarnes teksti viktor\u012bn\u0101",
       "fields": [
         {
-          "label": "Poga navigācijai atpakaļ",
-          "default": "Iepriekšējais jautājums"
+          "label": "Atpaka\u013c poga",
+          "default": "Previous question"
         },
         {
-          "label": "Nākamā jautājuma poga",
-          "default": "Nākamais jautājums"
+          "label": "N\u0101kam\u0101 poga",
+          "default": "Next question"
         },
         {
-          "label": "Pabeigšanas poga",
-          "default": "Beigt"
+          "label": "Pabeigt pogu",
+          "default": "Finish"
         },
         {
-          "label": "Poga Iesniegt",
-          "default": "Iesniegt"
+          "label": "Iesniegt pogu",
+          "default": "Submit"
         },
         {
           "label": "Progresa teksts",
-          "description": "Teksts tiek izmantots, ja ir izvēlēta progresa atspoguļošana tekstā.",
-          "default": "Jautājums: @current no @total jautājumiem"
+          "description": "Teksts, kas tiek izmantots, ja ir izv\u0113l\u0113ts teksta progress.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Etiķete, lai pārietu uz noteiktu jautājumu",
-          "description": "Jautājuma numura vietā jāizmanto vietturis '%d', bet kopējā jautājumu skaita vietā – %total.",
-          "default": "Jautājums %d no %total"
+          "label": "Eti\u0137ete p\u0101rejai uz konkr\u0113tu jaut\u0101jumu",
+          "description": "Jaut\u0101juma numura viet\u0101 j\u0101izmanto aizst\u0101jv\u0101rds \"%d\", bet jaut\u0101jumu kop\u0113j\u0101 skaita viet\u0101 - %total.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Autortiesību dialoga jautājuma etiķete",
-          "default": "Jautājums"
+          "label": "Autorties\u012bbu dialoglodzi\u0146a jaut\u0101juma eti\u0137ete",
+          "default": "Question"
         },
         {
-          "label": "Asistīvo tehnoloģiju progress",
-          "description": "Var izmantot jautājumu mainīgos @current un @total",
-          "default": "Jautājums @current no @total"
+          "label": "Las\u012b\u0161anas progress",
+          "description": "Var izmantot @current un @total jaut\u0101juma main\u012bgos",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Neatbildēta jautājuma teksts",
-          "default": "Neatbildēts"
+          "label": "Neatbild\u0113ts jaut\u0101juma teksts",
+          "default": "Unanswered"
         },
         {
-          "label": "Atbildēta jautājuma teksts",
-          "default": "Atbildēts"
+          "label": "Atbild\u0113ts jaut\u0101juma teksts",
+          "default": "Answered"
         },
         {
-          "label": "Pašreizējā jautājuma teksts",
-          "default": "Pašreizējais jautājums"
+          "label": "Pa\u0161reiz\u0113jais jaut\u0101juma teksts",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Navig\u0101cijas eti\u0137ete las\u012bt\u0101jiem",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Atspējot navigāciju atpakaļ",
-      "description": "Šī opcija ļaus jautājumu kopā virzīties tikai uz priekšu"
+      "label": "Atpaka\u013cgaitas navig\u0101cijas atsp\u0113jo\u0161ana",
+      "description": "\u0160\u012b opcija \u013caus jums virz\u012bties uz priek\u0161u tikai jaut\u0101jumu komplekt\u0101.",
+      "default": false
     },
     {
-      "label": "Jautājumus izkārtot jaukti",
-      "description": "Iespējot, lai jautājumus atspoguļotu nejaušā secībā."
+      "label": "Izlases jaut\u0101jumi",
+      "description": "Iesp\u0113ja nejau\u0161in\u0101t r\u0101d\u012bto jaut\u0101jumu sec\u012bbu.",
+      "default": false
     },
     {
-      "label": "Parādāmo jautājumu skaits:",
-      "description": "Izveidojiet nejauši izvēlētu jautājumu kopumu no kopējā daudzuma."
+      "label": "R\u0101d\u0101mo jaut\u0101jumu skaits:",
+      "description": "Izveidojiet izlases veid\u0101 atlas\u012btu jaut\u0101jumu partiju no kop\u0113j\u0101 skaita."
     },
     {
-      "label": "Tests pabeigts",
+      "label": "Viktor\u012bna pabeigta",
       "fields": [
         {
-          "label": "Parādīt rezultātus"
+          "label": "R\u0101d\u012bt rezult\u0101tus",
+          "default": true
         },
         {
-          "label": "Risinājuma parādīšanas poga"
+          "label": "Displeja risin\u0101juma poga",
+          "default": true
         },
         {
-          "label": "Parādīt atkārtota mēģinājuma pogu"
+          "label": "Displeja atk\u0101rto\u0161anas poga",
+          "default": true
         },
         {
-          "label": "Nav rezultātu ziņojums",
-          "description": "Teksts tiek rādīts beigu lapā, ja ir atspējota opcija “Rādīt rezultātus”",
-          "default": "Pabeigts"
+          "label": "Nav rezult\u0101tu zi\u0146ojuma",
+          "description": "Teksts, kas tiek par\u0101d\u012bts beigu lap\u0101, ja ir atsp\u0113jota opcija \"R\u0101d\u012bt rezult\u0101tus\"",
+          "default": "Finished"
         },
         {
-          "label": "Atgriezeniskās saites virsraksts",
-          "default": "Tavs rezultāts:",
-          "description": "Šis virsraksts tiks parādīts testa beigās, kad lietotājs būs atbildējis uz visiem jautājumiem."
+          "label": "Atsauksmju sada\u013ca",
+          "default": "Your result:",
+          "description": "\u0160is virsraksts tiks par\u0101d\u012bts viktor\u012bnas beig\u0101s, kad lietot\u0101js b\u016bs atbild\u0113jis uz visiem jaut\u0101jumiem.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Score announcer",
-          "description": "Šī etiķete tiks izmantota, lai lietotājam beigu ekrānā paziņotu gala rezultātu",
-          "default": "Jūs ieguvāt @finals no @totals punktiem"
+          "label": "Rezult\u0101tu diktors",
+          "description": "\u0160\u012b eti\u0137ete tiks izmantota, lai lietot\u0101jam gal\u012bgaj\u0101 ekr\u0101n\u0101 pazi\u0146otu gal\u012bgo rezult\u0101tu.",
+          "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Kopējā atgriezeniskā saite",
+          "label": "Visp\u0101r\u0113j\u0101s atsauksmes",
           "fields": [
             {
               "widgets": [
                 {
-                  "label": "Pēc noklusējuma"
+                  "label": "Noklus\u0113juma"
                 }
               ],
-              "label": "Iestatiet pielāgotu atgriezenisko saiti katram rezultātu diapazonam",
-              "description": "Piemērs: 0–20% Slikts rezultāts, 21–91% Viduvējs rezultāts, 91–100% Lielisks rezultāts!",
-              "entity": "diapazons",
+              "label": "Defin\u0113jiet piel\u0101gotu atgriezenisko saiti jebkuram rezult\u0101tu diapazonam",
+              "description": "Noklik\u0161\u0137iniet uz pogas \"Pievienot diapazonu\", lai pievienotu tik diapazonu, cik nepiecie\u0161ams. Piem\u0113rs: 0-20% slikts rezult\u0101ts, 21-91% vid\u0113js rezult\u0101ts, 91-100% lielisks rezult\u0101ts!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Rezultātu diapazons"
+                    "label": "Rezult\u0101tu diapazons",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Atgriezeniskā saite noteiktajam rezultātu diapazonam",
+                    "default": 100
+                  },
+                  {
+                    "label": "Atsauksmes par noteiktu rezult\u0101tu diapazonu",
                     "placeholder": "Aizpildiet atgriezenisko saiti"
                   }
                 ]
@@ -183,92 +222,135 @@
           ]
         },
         {
-          "label": "Vecās atgriezeniskās saites",
+          "label": "Vec\u0101s atsauksmes",
           "fields": [
             {
-              "label": "Testa nokārtošanas paziņojums",
-              "description": "Šis teksts tiks parādīts virs rezultāta, ja lietotājs būs veiksmīgi nokārtojis testu."
+              "label": "Viktor\u012bna iztur\u0113ja sveicienu",
+              "description": "\u0160is teksts tiks par\u0101d\u012bts virs rezult\u0101ta, ja lietot\u0101js b\u016bs veiksm\u012bgi nok\u0101rtojis viktor\u012bnu.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Nokārtošanas komentārs",
-              "description": "Šis komentārs tiks parādīts pēc rezultāta, ja lietotājs būs veiksmīgi nokārtojis testu."
+              "label": "Pie\u0146emts koment\u0101rs",
+              "description": "\u0160is koment\u0101rs tiks par\u0101d\u012bts p\u0113c rezult\u0101ta, ja lietot\u0101js b\u016bs veiksm\u012bgi nok\u0101rtojis viktor\u012bnu.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Testa nenokārtošanas virsraksts",
-              "description": "Šis teksts tiks parādīts virs rezultāta, ja lietotājs nebūs nokārtojis testu."
+              "label": "Viktor\u012bna neizdev\u0101s nosaukums",
+              "description": "\u0160is teksts tiks par\u0101d\u012bts virs rezult\u0101ta, ja lietot\u0101js nav iztur\u0113jis viktor\u012bnu.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Nenokārtošanas komentārs",
-              "description": "Šis teksts tiks parādīts pēc rezultāta, ja lietotājs nebūs nokārtojis testu."
+              "label": "Neveiksm\u012bgs koment\u0101rs",
+              "description": "\u0160is koment\u0101rs tiks par\u0101d\u012bts p\u0113c rezult\u0101ta, ja lietot\u0101js nav iztur\u0113jis viktor\u012bnu.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Rādīt risinājumu pogas etiķete",
-          "default": "Rādīt risinājumu",
-          "description": "Pogas \"Parādīt risinājumu\" teksts."
+          "label": "Risin\u0101juma pogas eti\u0137ete",
+          "default": "Show solution",
+          "description": "Risin\u0101juma pogas teksts."
         },
         {
-          "label": "Mēģināt vēlreiz pogas etiķete",
-          "default": "Mēģināt vēlreiz",
-          "description": "Pogas \"Mēģināt vēlreiz\" teksts."
+          "label": "Atk\u0101rtot pogas eti\u0137ete",
+          "default": "Retry",
+          "description": "Atk\u0101rto\u0161anas pogas teksts."
         },
         {
-          "label": "Pabeigšanas pogas teksts",
-          "default": "Beigt"
+          "label": "Pabeigt pogas teksts",
+          "default": "Finish"
         },
         {
-          "label": "Iesniegšanas pogas teksts",
-          "default": "Iesniegt"
+          "label": "Pogas \"Nos\u016bt\u012bt\" teksts",
+          "default": "Submit"
         },
         {
-          "label": "Parādīt video pirms testa rezultātiem"
+          "label": "R\u0101d\u012bt videoklipu pirms viktor\u012bnas rezult\u0101tiem"
         },
         {
-          "label": "Iespējot video izlaišanas pogu"
+          "label": "Iesp\u0113jot izlaist video pogu"
         },
         {
-          "label": "Video izlaišanas pogas etiķete",
-          "default": "Izlaist video"
+          "label": "Video pogas izlaist eti\u0137ete",
+          "default": "Skip video"
         },
         {
-          "label": "Sekmīgas nokārtošanas video",
-          "description": "Šis videoklips tiks atskaņots, ja lietotājs sekmīgi nokārtos testu."
+          "label": "Nodots video",
+          "description": "\u0160is videoklips tiks atska\u0146ots, ja lietot\u0101js b\u016bs veiksm\u012bgi nok\u0101rtojis viktor\u012bnu."
         },
         {
-          "label": "Nenokārtošanas video",
-          "description": "Šis videoklips tiks atskaņots, ja lietotājs nenokārtos testu."
+          "label": "Fail video",
+          "description": "\u0160is videoklips tiks atska\u0146ots, ja lietot\u0101js nesekm\u012bgi izpild\u012bs viktor\u012bnu."
         }
       ]
     },
     {
-      "label": "Iestatījumi pogām \"Rādīt risinājumu\" un \"Mēģināt vēlreiz\"",
+      "label": "Iestat\u012bjumi \"P\u0101rbaud\u012bt\", \"R\u0101d\u012bt risin\u0101jumu\" un \"Atk\u0101rtot\".",
       "fields": [
         {
-          "label": "Rādīt pogas \"Pārbaudīt\"",
-          "description": "Šī opcija nosaka, vai poga \"Pārbaudīt\" tiks parādīta visiem jautājumiem."
+          "label": "R\u0101d\u012bt pogas \"P\u0101rbaud\u012bt\"",
+          "description": "\u0160\u012b opcija nosaka, vai visiem jaut\u0101jumiem tiks r\u0101d\u012bta poga \"P\u0101rbaud\u012bt\".",
+          "default": true
         },
         {
-          "label": "Ignorēt pogu \"Rādīt risinājumu\"",
-          "description": "Šī opcija nosaka, vai poga \"Rādīt risinājumu\" tiks rādīta visiem jautājumiem, atspējota visiem vai konfigurēta katram jautājumam atsevišķi.",
+          "label": "P\u0101rsl\u0113gt pogu \"R\u0101d\u012bt risin\u0101jumu\"",
+          "description": "\u0160\u012b opcija nosaka, vai poga \"R\u0101d\u012bt risin\u0101jumu\" tiks r\u0101d\u012bta visiem jaut\u0101jumiem, atsp\u0113jota visiem vai konfigur\u0113ta katram jaut\u0101jumam atsevi\u0161\u0137i.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Iespējota"
+              "label": "Iesl\u0113gts"
             },
             {
-              "label": "Atspējota"
+              "label": "Inval\u012bdi"
             }
           ]
         },
         {
-          "label": "Ignorēt pogu \"Mēģināt vēlreiz\"",
-          "description": "Šī opcija nosaka, vai poga \"Mēģināt vēlreiz\" tiks rādīta visiem jautājumiem, atspējota visiem vai konfigurēta katram jautājumam atsevišķi.",
+          "label": "Pogas \"Atk\u0101rtot\" atcel\u0161ana",
+          "description": "\u0160\u012b opcija nosaka, vai poga \"Atk\u0101rtot\" tiks r\u0101d\u012bta visiem jaut\u0101jumiem, vai t\u0101 tiks atsp\u0113jota visiem jaut\u0101jumiem, vai ar\u012b tiks konfigur\u0113ta katram jaut\u0101jumam atsevi\u0161\u0137i.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Iespējota"
+              "label": "Iesl\u0113gts"
             },
             {
-              "label": "Atspējota"
+              "label": "Inval\u012bdi"
             }
           ]
         }

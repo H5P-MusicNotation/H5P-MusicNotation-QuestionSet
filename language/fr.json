@@ -1,36 +1,51 @@
 {
   "semantics": [
     {
-      "label": "Introduction du Quiz ",
+      "label": "Introduction au quiz",
       "fields": [
         {
-          "label": "Afficher l'introduction"
+          "label": "Introduction \u00e0 l'affichage"
         },
         {
           "label": "Titre",
-          "description": "Ce titre sera affiché au-dessus de votre texte d'introduction."
+          "description": "Ce titre sera affich\u00e9 au-dessus du texte d'introduction.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Texte d'introduction ",
-          "description": "Ce texte sera affiché avant le démarrage du quiz."
+          "label": "Texte d'introduction",
+          "description": "Ce texte s'affiche avant le d\u00e9but du quiz.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Texte du bouton de démarrage",
-          "default": "Commencer"
+          "label": "Texte du bouton de d\u00e9marrage",
+          "default": "Start Quiz"
         },
         {
-          "label": "Image d'arrière-plan",
-          "description": "Image d'arrière-plan optionnelle pour l'introduction."
+          "label": "Image de fond",
+          "description": "Une image d'arri\u00e8re-plan facultative pour l'introduction."
         }
       ]
     },
     {
-      "label": "Image d'arrière-plan",
-      "description": "Image d'arrière-plan optionnelle pour la série de questions."
+      "label": "Image de fond",
+      "description": "Image d'arri\u00e8re-plan facultative pour l'ensemble de questions."
     },
     {
-      "label": "Indicateur de progression",
-      "description": "Style de l'indicateur de progression de la série de questions.",
+      "label": "Indicateur de progr\u00e8s",
+      "description": "La question d\u00e9finit le style de l'indicateur de progr\u00e8s.",
       "options": [
         {
           "label": "Texte"
@@ -38,17 +53,19 @@
         {
           "label": "Points"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
-      "label": "Pourcentage de réussite",
-      "description": "Pourcentage exigé pour considérer que le quiz est réussi."
+      "label": "Pourcentage de r\u00e9ussite",
+      "description": "Pourcentage du score total requis pour r\u00e9ussir le quiz.",
+      "default": 50
     },
     {
       "label": "Questions",
       "widgets": [
         {
-          "label": "Par défaut"
+          "label": "D\u00e9faut"
         },
         {
           "label": "Texte"
@@ -57,125 +74,147 @@
       "entity": "question",
       "field": {
         "label": "Type de question",
-        "description": "Types possibles pour cette question."
+        "description": "Biblioth\u00e8que pour cette question.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Textes de l'interface du quiz",
+      "label": "Textes d'interface en quiz",
       "fields": [
         {
-          "label": "Bouton Retour",
-          "default": "Retour"
+          "label": "Bouton de retour",
+          "default": "Previous question"
         },
         {
-          "label": "Bouton Suivant",
-          "default": "Suivant"
+          "label": "Bouton suivant",
+          "default": "Next question"
         },
         {
-          "label": "Bouton Fin",
-          "default": "Terminer"
+          "label": "Bouton de fin",
+          "default": "Finish"
         },
         {
-          "label": "Submit button",
-          "default": "Vérifier"
+          "label": "Bouton de soumission",
+          "default": "Submit"
         },
         {
-          "label": "Texte de progression",
-          "description": "Texte utilisé si la progression textuelle a été sélectionnée.",
-          "default": "Question @current sur @total"
+          "label": "Texte d'avancement",
+          "description": "Texte utilis\u00e9 si la progression textuelle est s\u00e9lectionn\u00e9e.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Texte pour aller directement à une question",
-          "description": "Vous devez utiliser la variable '%d' à la place du numéro de la question et %total à la place du nombre total de questions.",
-          "default": "Question %d sur %total"
+          "label": "\u00c9tiquette permettant de passer \u00e0 une certaine question",
+          "description": "Vous devez utiliser le caract\u00e8re g\u00e9n\u00e9rique \"%d\" au lieu du num\u00e9ro de la question, et %total au lieu du nombre total de questions.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Texte de la question de la boîte de dialogue de copyright",
+          "label": "\u00c9tiquette de la question du dialogue sur le droit d'auteur",
           "default": "Question"
         },
         {
-          "label": "Progression pour la synthèse vocale",
-          "description": "Vous pouvez utiliser les variables @current et @total",
-          "default": "Question @current sur @total"
+          "label": "Progression de la lecture",
+          "description": "Peut utiliser les variables de question @current et @total",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Texte d'une question sans réponse",
-          "default": "Pas de réponse donnée"
+          "label": "Texte de la question sans r\u00e9ponse",
+          "default": "Unanswered"
         },
         {
-          "label": "Texte d'une question ayant reçu une réponse",
-          "default": "Réponse donnée"
+          "label": "Texte de la question r\u00e9pondue",
+          "default": "Answered"
         },
         {
-          "label": "Texte de la question en cours",
-          "default": "Question en cours"
+          "label": "Texte de la question actuelle",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Etiquette de navigation pour les personnes qui lisent",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Désactiver la possibilité de naviguer en arrière",
-      "description": "Cette option ne permettra plus que la navigation en avant au sein du module Question Set."
+      "label": "D\u00e9sactiver la navigation \u00e0 rebours",
+      "description": "Cette option vous permet uniquement d'avancer dans la s\u00e9rie de questions.",
+      "default": false
     },
     {
-      "label": "Afficher les questions dans un ordre aléatoire",
-      "description": "Activer pour choisir aléatoirement l'ordre des questions à l'affichage."
+      "label": "Randomiser les questions",
+      "description": "Permet de rendre al\u00e9atoire l'ordre des questions affich\u00e9es.",
+      "default": false
     },
     {
-      "label": "Nombre de questions à afficher:",
-      "description": "Génère aléatoirement un jeu de questions parmi toutes les questions disponibles."
+      "label": "Nombre de questions \u00e0 afficher :",
+      "description": "Cr\u00e9ez un lot al\u00e9atoire de questions \u00e0 partir du total."
     },
     {
-      "label": "Quiz terminé",
+      "label": "Quiz termin\u00e9",
       "fields": [
         {
-          "label": "Afficher les résultats"
+          "label": "Afficher les r\u00e9sultats",
+          "default": true
         },
         {
-          "label": "Afficher le bouton \"Solution\"."
+          "label": "Bouton d'affichage de la solution",
+          "default": true
         },
         {
-          "label": "Display retry button"
+          "label": "Bouton de r\u00e9essai de l'affichage",
+          "default": true
         },
         {
-          "label": "Message si pas de résultats",
-          "description": "Texte affiché sur la page finale si l'option \"Afficher les résultats\" est désactivée.",
-          "default": "Terminé"
+          "label": "Message d'absence de r\u00e9sultats",
+          "description": "Texte affich\u00e9 \u00e0 la fin de la page lorsque l'option \"Afficher les r\u00e9sultats\" est d\u00e9sactiv\u00e9e",
+          "default": "Finished"
         },
         {
-          "label": "Titre des commentaires",
-          "default": "Vos résultats :",
-          "description": "Ce titre sera affiché à la fin du quiz quand l'utilisateur aura répondu à toutes les questions."
+          "label": "Rubrique Feedback",
+          "default": "Your result:",
+          "description": "Ce titre s'affiche \u00e0 la fin du quiz lorsque l'utilisateur a r\u00e9pondu \u00e0 toutes les questions.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Score announcer",
-          "description": "This label will be used for announcing the final score to the user on the end screen",
+          "label": "Annonceur du score",
+          "description": "Ce label sera utilis\u00e9 pour annoncer le score final \u00e0 l'utilisateur sur l'\u00e9cran final.",
           "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Opacité des étiquettes",
+          "label": "Retour d'information g\u00e9n\u00e9ral",
           "fields": [
             {
               "widgets": [
                 {
-                  "label": "Par défaut"
+                  "label": "D\u00e9faut"
                 }
               ],
-              "label": "Définir un retour personnalisé pour chaque tranche de score",
-              "description": "Exemple: 0-20% Score insuffisant, 21-91% Score moyen, 91-100% Bon score!",
-              "entity": "tranche",
+              "label": "D\u00e9finir un feedback personnalis\u00e9 pour n'importe quelle fourchette de score",
+              "description": "Cliquez sur le bouton \"Ajouter une plage\" pour ajouter autant de plages que n\u00e9cessaire. Exemple : 0-20% Mauvais score, 21-91% Score moyen, 91-100% Excellent score !",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Tranche de score"
+                    "label": "Fourchette de scores",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Retour pour cette tranche de score",
-                    "placeholder": "Entrer le message de retour"
+                    "default": 100
+                  },
+                  {
+                    "label": "Retour d'information pour une fourchette de scores d\u00e9finie",
+                    "placeholder": "Remplir le questionnaire"
                   }
                 ]
               }
@@ -183,92 +222,135 @@
           ]
         },
         {
-          "label": "Old Feedback",
+          "label": "Ancien retour d'information",
           "fields": [
             {
-              "label": "Commentaire de félicitation",
-              "description": "Ce commentaire sera affiché au-dessus du score de l'utilisateur si celui-ci réussit le quiz."
+              "label": "Quiz pass\u00e9, salutations",
+              "description": "Ce texte s'affiche au-dessus du score si l'utilisateur a r\u00e9ussi le test.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Commentaire en cas de succès",
-              "description": "Commentaire affiché lors du passage du quiz avec succès."
+              "label": "Commentaire adopt\u00e9",
+              "description": "Ce commentaire s'affichera apr\u00e8s le score si l'utilisateur a r\u00e9ussi le test.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Commentaire en cas d'échec",
-              "description": "Ce commentaire sera affiché au-dessus du score de l'utilisateur si celui-ci échoue au quiz."
+              "label": "Le titre du quiz a \u00e9chou\u00e9",
+              "description": "Ce texte sera affich\u00e9 au-dessus du score si l'utilisateur a \u00e9chou\u00e9 au test.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Commentaire additionnel en cas d'échec",
-              "description": "Commentaire additionnel affiché lors de l'échec au quiz."
+              "label": "Commentaire non abouti",
+              "description": "Ce commentaire sera affich\u00e9 apr\u00e8s le score si l'utilisateur a \u00e9chou\u00e9 au test.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Texte du bouton \"Solution\"",
-          "default": "Voir la solution",
+          "label": "\u00c9tiquette du bouton de solution",
+          "default": "Show solution",
           "description": "Texte pour le bouton de solution."
         },
         {
-          "label": "Texte du bouton \"Recommencer\"",
-          "default": "Recommencer",
-          "description": "Texte pour le bouton Recommencer."
+          "label": "\u00c9tiquette du bouton de r\u00e9essai",
+          "default": "Retry",
+          "description": "Texte pour le bouton de r\u00e9essai."
         },
         {
-          "label": "Texte pour le bouton de fin",
-          "default": "Terminer"
+          "label": "Texte du bouton Finir",
+          "default": "Finish"
         },
         {
-          "label": "Submit button text",
+          "label": "Texte du bouton de soumission",
           "default": "Submit"
         },
         {
-          "label": "Afficher une vidéo avant l'affichage des résultats du quiz"
+          "label": "Afficher une vid\u00e9o avant les r\u00e9sultats du quiz"
         },
         {
-          "label": "Activer le bouton \"Passer la vidéo\""
+          "label": "Activer le bouton de saut de vid\u00e9o"
         },
         {
-          "label": "Texte du bouton \"Passer la vidéo\"",
-          "default": "Passer la vidéo"
+          "label": "\u00c9tiquette du bouton \"Sauter la vid\u00e9o",
+          "default": "Skip video"
         },
         {
-          "label": "Vidéo en cas de succès",
-          "description": "Vidéo affichée si l'utilisateur réussit le quiz."
+          "label": "Vid\u00e9o r\u00e9ussie",
+          "description": "Cette vid\u00e9o sera diffus\u00e9e si l'utilisateur a r\u00e9ussi le test."
         },
         {
-          "label": "Vidéo en cas d'échec",
-          "description": "Vidéo affichée si l'utilisateur échoue au quiz."
+          "label": "Vid\u00e9o de l'\u00e9chec",
+          "description": "Cette vid\u00e9o sera diffus\u00e9e si l'utilisateur \u00e9choue au test."
         }
       ]
     },
     {
-      "label": "Options pour les boutons \"Montrer la solution\" et \"Recommencer\".",
+      "label": "Param\u00e8tres pour \"V\u00e9rifier\", \"Montrer la solution\" et \"R\u00e9essayer\"",
       "fields": [
         {
-          "label": "Montrer les boutons \"Vérifier\"",
-          "description": "Cette option determine si le bouton \"Vérifier\" va apparaître pour toutes les questions."
+          "label": "Afficher les boutons \"Check\" (v\u00e9rifier)",
+          "description": "Cette option d\u00e9termine si le bouton \"Cocher\" sera affich\u00e9 pour toutes les questions.",
+          "default": true
         },
         {
-          "label": "Cacher le bouton \"Voir la correction\"",
-          "description": "Cette option détermine si le bouton \"Voir la correction\" sera affiché pour toutes les questions, désactivé pour toutes ou configuré pour chaque question individuellement.",
+          "label": "Remplacer le bouton \"Afficher la solution",
+          "description": "Cette option d\u00e9termine si le bouton \"Afficher la solution\" sera affich\u00e9 pour toutes les questions, d\u00e9sactiv\u00e9 pour toutes les questions ou configur\u00e9 pour chaque question individuellement.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Activé"
+              "label": "Activ\u00e9"
             },
             {
-              "label": "Désactivé"
+              "label": "Handicap\u00e9s"
             }
           ]
         },
         {
-          "label": "Cacher le bouton \"Recommencer\"",
-          "description": "Cette option détermine si le bouton \"Recommencer\" sera affiché pour toutes les questions, désactivé pour toutes ou configuré pour chaque question individuellement.",
+          "label": "Annuler le bouton \"R\u00e9essayer",
+          "description": "Cette option d\u00e9termine si le bouton \"R\u00e9essayer\" sera affich\u00e9 pour toutes les questions, s'il sera d\u00e9sactiv\u00e9 pour toutes les questions ou s'il sera configur\u00e9 pour chaque question individuellement.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Activé"
+              "label": "Activ\u00e9"
             },
             {
-              "label": "Désactivé"
+              "label": "Handicap\u00e9s"
             }
           ]
         }

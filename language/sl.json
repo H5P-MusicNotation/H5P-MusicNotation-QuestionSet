@@ -4,159 +4,195 @@
       "label": "Uvod v kviz",
       "fields": [
         {
-          "label": "Prikaži uvod"
+          "label": "Uvod v prikazovalnik"
         },
         {
           "label": "Naslov",
-          "description": "Naslov je prikazan nad vibebino kviza."
+          "description": "Ta naslov bo prikazan nad uvodnim besedilom.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Vsebina uvoda",
-          "description": "Besedilo je prikazano pred začetkom reševanja kviza."
+          "label": "Uvodno besedilo",
+          "description": "To besedilo se prika\u017ee pred za\u010detkom kviza.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Besedilo gumba za začetek kviza",
-          "default": "Začetek"
+          "label": "Besedilo gumba Start",
+          "default": "Start Quiz"
         },
         {
-          "label": "Slika za ozadje",
-          "description": "Neobvezno. Slika je prikazana v ozadju uvoda."
+          "label": "Slika v ozadju",
+          "description": "Neobvezna slika ozadja za uvod."
         }
       ]
     },
     {
-      "label": "Slika za ozadje",
-      "description": "Neobvezno. Slika je prikazana v ozadju kviza."
+      "label": "Slika v ozadju",
+      "description": "Neobvezna slika ozadja za niz vpra\u0161anj."
     },
     {
-      "label": "Indikator napredka",
-      "description": "Nastavitev prikaza napredka v kvizu (npr. število trenutnega in preostalih vprašanj).",
+      "label": "Kazalnik napredka",
+      "description": "Vpra\u0161anje nastavi slog kazalnika napredka.",
       "options": [
         {
-          "label": "Tekstovni"
+          "label": "Besedilo"
         },
         {
           "label": "Pike"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
-      "label": "Prag za napredovanje",
-      "description": "Odstotek, ki je potreben za uspešen zaključek kviza."
+      "label": "Odstotek uspe\u0161nosti",
+      "description": "Odstotek skupnega rezultata, potrebnega za uspe\u0161no opravljen kviz.",
+      "default": 50
     },
     {
-      "label": "Vprašanja",
+      "label": "Vpra\u0161anja",
       "widgets": [
         {
           "label": "Privzeto"
         },
         {
-          "label": "Tekstoven"
+          "label": "Besedilo"
         }
       ],
-      "entity": "vprašanje",
+      "entity": "question",
       "field": {
-        "label": "Tip vprašanja",
-        "description": "Seznam možnih tipov vprašanj."
+        "label": "Vrsta vpra\u0161anja",
+        "description": "Knji\u017enica za to vpra\u0161anje.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Besedila uporabniškega vmesnika v kvizu",
+      "label": "Besedila vmesnikov v kvizu",
       "fields": [
         {
-          "label": "Besedilo za gumb \"Prejšnje vprašanje\"",
-          "default": "Prejšnje vprašanje"
+          "label": "Gumb za nazaj",
+          "default": "Previous question"
         },
         {
-          "label": "Besedilo za gumb \"Naslednje vprašanje\"",
-          "default": "Naslednje vprašanje"
+          "label": "Naslednji gumb",
+          "default": "Next question"
         },
         {
-          "label": "Besedilo gumba \"Potrdi\"",
-          "default": "Potrdi"
+          "label": "Gumb za dokon\u010danje",
+          "default": "Finish"
         },
         {
-          "label": "Besedilo gumba \"Oddaj\"",
-          "default": "Oddaj"
+          "label": "Po\u0161lji gumb",
+          "default": "Submit"
         },
         {
           "label": "Besedilo o napredku",
-          "description": "Besedilo v primeru izbire tekstovnega indikatorja napredka.",
-          "default": "Vprašanje: @current od @total"
+          "description": "Besedilo, ki se uporablja, \u010de je izbran besedilni napredek.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Besedilo v primeru skoka na izbrano vprašanje",
-          "description": "Spremenljivki sta %d in %total.",
-          "default": "Vprašanje: %d od %total"
+          "label": "Oznaka za preskok na dolo\u010deno vpra\u0161anje",
+          "description": "Namesto \u0161tevilke vpra\u0161anja morate uporabiti nadomestni znak '%d', namesto skupnega \u0161tevila vpra\u0161anj pa %total.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Besedilo pogovornega okna za avtorske pravice",
-          "default": "Vprašanje"
+          "label": "Oznaka vpra\u0161anja v pogovornem oknu o avtorskih pravicah",
+          "default": "Question"
         },
         {
-          "label": "Izražanje napredka v bralnikih zaslona",
-          "description": "Spremenljivki sta @current in @total.",
-          "default": "Vprašanje: @current od @total"
+          "label": "Napredek bralca",
+          "description": "Lahko uporabite spremenljivki @current in @total",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Besedilo za vprašanja brez odgovorov",
-          "default": "Brez odgovora"
+          "label": "Besedilo neodgovorjenega vpra\u0161anja",
+          "default": "Unanswered"
         },
         {
-          "label": "Besedilo za vprašanja z odgovori",
-          "default": "Odgovorjeno"
+          "label": "Besedilo vpra\u0161anja z odgovorom",
+          "default": "Answered"
         },
         {
-          "label": "Besedilo trenutnega vprašanja",
-          "default": "Trenutno vprašanje"
+          "label": "Besedilo trenutnega vpra\u0161anja",
+          "default": "Current question"
         },
         {
-          "label": "Besedilo za navigacijo bralnikov zaslona",
-          "default": "Vprašanja"
+          "label": "Navigacijska nalepka za bralce",
+          "default": "Questions"
         }
       ]
     },
     {
-      "label": "Onemogoči premikanje v obe smeri",
-      "description": "Udeleženci se bodo lahko premikali le naprej."
+      "label": "Onemogo\u010danje navigacije nazaj",
+      "description": "S to mo\u017enostjo boste lahko napredovali le v nizu vpra\u0161anj.",
+      "default": false
     },
     {
-      "label": "Naključna razporeditev",
-      "description": "Omogoči prikaz vprašanj po naključnem vrstnem redu."
+      "label": "Naklju\u010dna vpra\u0161anja",
+      "description": "Omogo\u010dite naklju\u010dno razvr\u0161\u010danje vpra\u0161anj na zaslonu.",
+      "default": false
     },
     {
-      "label": "Število vprašanj za prikaz",
-      "description": "Iz celotnega bazena bo po naključnem vrstnem redu prikazano le izbrano število vprašanj."
+      "label": "\u0160tevilo prikazanih vpra\u0161anj:",
+      "description": "Ustvarite naklju\u010dno izbrano serijo vpra\u0161anj iz skupnega \u0161tevila."
     },
     {
-      "label": "Zaključek kviza",
+      "label": "Kviz kon\u010dan",
       "fields": [
         {
-          "label": "Prikaži rezultate"
+          "label": "Prikaz rezultatov",
+          "default": true
         },
         {
-          "label": "Prikaži gumb z rešitvijo"
+          "label": "Gumb za prikaz re\u0161itve",
+          "default": true
         },
         {
-          "label": "Prikaži gumb za ponovitev reševanja"
+          "label": "Gumb za ponovitev prikaza",
+          "default": true
         },
         {
-          "label": "Sporočilo o koncu kviza",
-          "description": "Besedilo se izpiše, ko je onemogočena možnost \"Prikaži rezultate\"",
-          "default": "Zaključeno"
+          "label": "Ni sporo\u010dila o rezultatih",
+          "description": "Besedilo, prikazano na kon\u010dni strani, ko je mo\u017enost \"Prika\u017ei rezultate\" onemogo\u010dena",
+          "default": "Finished"
         },
         {
-          "label": "Naslov povratne informacije",
-          "default": "Rezultat reševanja:",
-          "description": "Besedilo se izpiše na koncu kviza, ko udeleženec reši vsa vprašanja."
+          "label": "Naslov povratnih informacij",
+          "default": "Your result:",
+          "description": "Ta naslov se prika\u017ee na koncu kviza, ko uporabnik odgovori na vsa vpra\u0161anja.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Sporočilo o doseženem rezultatu",
-          "description": "Besedilo se izpiše na končnem zaslonu kviza in udeleženca obvesti o doseženih točkah.",
-          "default": "Dosežene točke: @finals od @totals"
+          "label": "Napovedovalec rezultatov",
+          "description": "Ta oznaka bo uporabljena za objavo kon\u010dnega rezultata uporabniku na kon\u010dnem zaslonu.",
+          "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Splošna povratna informacija",
+          "label": "Splo\u0161ne povratne informacije",
           "fields": [
             {
               "widgets": [
@@ -164,18 +200,21 @@
                   "label": "Privzeto"
                 }
               ],
-              "label": "Določi ločeno povratno informacijo za vsak razpon rezultatov",
-              "description": "Primer: 0-20 % Slab rezultat, 21-91 % Povprečen rezultat, 91-100 % Odličen rezultat!",
-              "entity": "razpon",
+              "label": "Opredelite povratne informacije po meri za poljubno obmo\u010dje ocen",
+              "description": "S klikom na gumb \"Dodaj obmo\u010dje\" dodajte toliko obmo\u010dij, kot jih potrebujete. Primer: 0-20 % slaba ocena, 21-91 % povpre\u010dna ocena, 91-100 % odli\u010dna ocena!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Razpon rezultatov"
+                    "label": "Razpon to\u010dk",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Povratna informacija za definiran razpon rezultatov",
-                    "placeholder": "Vnesite povratno informacijo"
+                    "default": 100
+                  },
+                  {
+                    "label": "Povratne informacije za dolo\u010den razpon to\u010dk",
+                    "placeholder": "Izpolnite povratne informacije"
                   }
                 ]
               }
@@ -183,92 +222,135 @@
           ]
         },
         {
-          "label": "Obstoječa povratna informacija",
+          "label": "Stare povratne informacije",
           "fields": [
             {
-              "label": "Naslov ob uspešni rešitvi kviza",
-              "description": "Besedilo se izpiše nad rezultatom, če udeleženec uspešno opravi kviz."
+              "label": "Kviz je bil uspe\u0161no opravljen Pozdrav",
+              "description": "To besedilo bo prikazano nad rezultatom, \u010de je uporabnik uspe\u0161no opravil kviz.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Komentar ob uspešni rešitvi kviza",
-              "description": "Besedilo se izpiše pod rezultatom, če udeleženec uspešno opravi kviz."
+              "label": "Sprejeta pripomba",
+              "description": "Ta komentar se prika\u017ee za rezultatom, \u010de je uporabnik uspe\u0161no opravil kviz.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Naslov ob neuspešni rešitvi kviza",
-              "description": "Besedilo se izpiše nad rezultatom, če udeleženec ne opravi kviza."
+              "label": "Naslov kviza ni uspel",
+              "description": "To besedilo se prika\u017ee nad rezultatom, \u010de uporabnik kviza ni opravil.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Komentar ob neuspešni rešitvi kviza",
-              "description": "Besedilo se izpiše pod rezultatom, če udeleženec ne opravi kviza."
+              "label": "Neuspe\u0161na pripomba",
+              "description": "Ta komentar se prika\u017ee za rezultatom, \u010de uporabnik kviza ni opravil.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Besedilo za gumb \"Prikaži rešitev\"",
-          "default": "Prikaži rešitev",
-          "description": "Text for the solution button."
+          "label": "Oznaka gumba za re\u0161itev",
+          "default": "Show solution",
+          "description": "Besedilo za gumb za re\u0161itev."
         },
         {
-          "label": "Besedilo za gumb \"Poskusi ponovno\"",
-          "default": "Poskusi ponovno",
-          "description": "Text for the retry button."
+          "label": "Oznaka gumba Ponovi poskus",
+          "default": "Retry",
+          "description": "Besedilo za gumb za ponovni poskus."
         },
         {
-          "label": "Besedilo gumba \"Potrdi\"",
-          "default": "Potrdi"
+          "label": "Besedilo gumba Kon\u010daj",
+          "default": "Finish"
         },
         {
-          "label": "Besedilo gumba \"Oddaj\"",
-          "default": "Oddaj"
+          "label": "Besedilo gumba za po\u0161iljanje",
+          "default": "Submit"
         },
         {
-          "label": "Predvajaj videoposnetek ob zaključku kviza"
+          "label": "Prikaz videoposnetka pred rezultati kviza"
         },
         {
-          "label": "Omogoči gumb za preskok videoposnetka"
+          "label": "Omogo\u010dite gumb za preskok videoposnetka"
         },
         {
-          "label": "Besedilo gumba za preskok videoposnetka",
-          "default": "Preskoči videoposnetek"
+          "label": "Oznaka gumba Presko\u010di videoposnetek",
+          "default": "Skip video"
         },
         {
-          "label": "Posnetek po uspešni rešitvi kviza",
-          "description": "Videoposnetek se predvaja, če udeleženec uspešno opravi kviz."
+          "label": "Sprejet videoposnetek",
+          "description": "Ta videoposnetek se predvaja, \u010de je uporabnik uspe\u0161no opravil kviz."
         },
         {
-          "label": "Posnetek po neuspešni rešitvi kviza",
-          "description": "Videoposnetek se predvaja, če udeleženec ne opravi kviza."
+          "label": "Neuspe\u0161en videoposnetek",
+          "description": "Ta videoposnetek se predvaja, \u010de uporabnik ne opravi kviza."
         }
       ]
     },
     {
-      "label": "Nastavitve gumbov \"Prikaži rešitev\" in \"Poskusi ponovno\"",
+      "label": "Nastavitve za \"Preveri\", \"Prika\u017ei re\u0161itev\" in \"Ponovi\"",
       "fields": [
         {
-          "label": "Določi prikaz gumba \"Preveri\"",
-          "description": "Nastavitev vpliva na preverjanje odgovorov v vibeh vprašanjih (npr. onemogočeno povsod, omogočeno individualno)."
+          "label": "Prika\u017ei gumbe \"Preveri\"",
+          "description": "Ta mo\u017enost dolo\u010da, ali bo gumb \"Preveri\" prikazan za vsa vpra\u0161anja.",
+          "default": true
         },
         {
-          "label": "Določi prikaz gumba \"Prikaži rešitev\"",
-          "description": "Nastavitev vpliva na prikaz rešitve v vibeh vprašanjih (npr. onemogočeno povsod, omogočeno individualno).",
+          "label": "Prekrivanje gumba \"Prika\u017ei re\u0161itev\"",
+          "description": "Ta mo\u017enost dolo\u010da, ali bo gumb \"Prika\u017ei re\u0161itev\" prikazan za vsa vpra\u0161anja, onemogo\u010den za vsa ali nastavljen za vsako vpra\u0161anje posebej.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Omogoči"
+              "label": "Omogo\u010deno"
             },
             {
-              "label": "Onemogoči"
+              "label": "Invalidi"
             }
           ]
         },
         {
-          "label": "Določi prikaz gumba \"Poskusi ponovno\"",
-          "description": "Nastavitev vpliva na možnost ponovnega poskusa v vibeh vprašanjih (npr. onemogočeno povsod, omogočeno individualno).",
+          "label": "Prekritje gumba \"Ponovi\"",
+          "description": "Ta mo\u017enost dolo\u010da, ali bo gumb \"Ponovi\" prikazan za vsa vpra\u0161anja, onemogo\u010den za vsa ali nastavljen za vsako vpra\u0161anje posebej.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Omogoči"
+              "label": "Omogo\u010deno"
             },
             {
-              "label": "Onemogoči"
+              "label": "Invalidi"
             }
           ]
         }

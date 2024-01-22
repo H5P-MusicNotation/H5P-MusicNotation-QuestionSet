@@ -1,36 +1,51 @@
 {
   "semantics": [
     {
-      "label": "Introducción al cuestionario",
+      "label": "Introducci\u00f3n al cuestionario",
       "fields": [
         {
-          "label": "Mostrar introducción"
+          "label": "Presentaci\u00f3n de la pantalla"
         },
         {
-          "label": "Título",
-          "description": "Este título se mostrará encima del texto de introducción."
+          "label": "T\u00edtulo",
+          "description": "Este t\u00edtulo aparecer\u00e1 encima del texto de introducci\u00f3n.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Texto de introducción",
-          "description": "Este texto se mostrará antes de que comience el cuestionario."
+          "label": "Texto de introducci\u00f3n",
+          "description": "Este texto se mostrar\u00e1 antes de que comience el cuestionario.",
+          "tags": [
+            "sub",
+            "sup",
+            "strong",
+            "em",
+            "p",
+            "code"
+          ]
         },
         {
-          "label": "Texto del botón de inicio",
-          "default": "Iniciar prueba"
+          "label": "Texto del bot\u00f3n de inicio",
+          "default": "Start Quiz"
         },
         {
-          "label": "Imagen de Fondo",
-          "description": "Una imagen de fondo opcional para la introducción."
+          "label": "Imagen de fondo",
+          "description": "Una imagen de fondo opcional para la introducci\u00f3n."
         }
       ]
     },
     {
       "label": "Imagen de fondo",
-      "description": "Una imagen de fondo opcional para el Conjunto de preguntas."
+      "description": "Imagen de fondo opcional para el conjunto de preguntas."
     },
     {
-      "label": "Indicador del progreso",
-      "description": "Estilo del indicador del progreso para el Conjunto de preguntas.",
+      "label": "Indicador de progreso",
+      "description": "Estilo del indicador de progreso de la pregunta.",
       "options": [
         {
           "label": "Textual"
@@ -38,11 +53,13 @@
         {
           "label": "Puntos"
         }
-      ]
+      ],
+      "default": "dots"
     },
     {
-      "label": "Porcentaje para aprobar",
-      "description": "Porcentaje de la puntuación total requerido para pasar el examen."
+      "label": "Porcentaje de aprobados",
+      "description": "Porcentaje de la puntuaci\u00f3n total necesaria para aprobar el cuestionario.",
+      "default": 50
     },
     {
       "label": "Preguntas",
@@ -54,109 +71,128 @@
           "label": "Textual"
         }
       ],
-      "entity": "pregunta",
+      "entity": "question",
       "field": {
         "label": "Tipo de pregunta",
-        "description": "Biblioteca para esta pregunta."
+        "description": "Biblioteca para esta pregunta.",
+        "options": [
+          "H5P.MusicNotation 1.0",
+          "H5P.MusicNotationMultiChoice 1.0"
+        ]
       }
     },
     {
-      "label": "Textos de interfaz en cuestionario",
+      "label": "Textos de interfaz en el cuestionario",
       "fields": [
         {
-          "label": "Botón de retroceso",
-          "default": "Pregunta anterior"
+          "label": "Bot\u00f3n Atr\u00e1s",
+          "default": "Previous question"
         },
         {
-          "label": "Botón Siguiente",
-          "default": "Pregunta siguiente"
+          "label": "Bot\u00f3n siguiente",
+          "default": "Next question"
         },
         {
-          "label": "Botón Terminar",
-          "default": "Terminar"
+          "label": "Bot\u00f3n Finalizar",
+          "default": "Finish"
         },
         {
-          "label": "Botón Enviar",
-          "default": "Enviar"
+          "label": "Bot\u00f3n Enviar",
+          "default": "Submit"
         },
         {
-          "label": "Texto del progreso",
-          "description": "Texto utilizado si se selecciona progreso textual.",
-          "default": "Pregunta: @current de @total preguntas"
+          "label": "Texto de progreso",
+          "description": "Texto utilizado si se selecciona el progreso textual.",
+          "default": "Question: @current of @total questions",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Etiqueta para saltar a una pregunta dada",
-          "description": "Debes usar el marcador \"%d\"; en lugar del número de pregunta y %total en lugar de la cantidad total de preguntas.",
-          "default": "Pregunta %d de %total"
+          "label": "Etiqueta para saltar a una pregunta determinada",
+          "description": "Debe utilizar el marcador de posici\u00f3n \"%d\" en lugar del n\u00famero de pregunta, y %total en lugar de la cantidad total de preguntas.",
+          "default": "Question %d of %total"
         },
         {
-          "label": "Etiqueta de diálogo de Copyright de pregunta",
-          "default": "Pregunta"
+          "label": "Etiqueta de la pregunta del di\u00e1logo Copyright",
+          "default": "Question"
         },
         {
-          "label": "Progreso para lector de pantalla",
-          "description": "Puedes usar @current y @total como variables de pregunta",
-          "default": "Pregunta @current de @total"
+          "label": "Progreso del altavoz de lectura",
+          "description": "Puede utilizar las variables de pregunta @actual y @total",
+          "default": "Question @current of @total"
         },
         {
-          "label": "Texto de pregunta no contestada",
-          "default": "No contestada"
+          "label": "Texto de pregunta sin respuesta",
+          "default": "Unanswered"
         },
         {
-          "label": "Texto de pregunta contestada",
-          "default": "Contestada"
+          "label": "Texto de la pregunta contestada",
+          "default": "Answered"
         },
         {
-          "label": "Texto de pregunta actual",
-          "default": "Pregunta actual"
+          "label": "Texto de la pregunta actual",
+          "default": "Current question"
         },
         {
-          "label": "Navigation label for readspeakers",
+          "label": "Etiqueta de navegaci\u00f3n para lectohablantes",
           "default": "Questions"
         }
       ]
     },
     {
-      "label": "Deshabilitar navegación hacia atrás",
-      "description": "Esta opción solamente te permitirá moverte hacia adelante en conjunto de preguntas"
+      "label": "Desactivar la navegaci\u00f3n hacia atr\u00e1s",
+      "description": "Esta opci\u00f3n s\u00f3lo le permitir\u00e1 avanzar en el Conjunto de preguntas",
+      "default": false
     },
     {
-      "label": "Barajar preguntas",
-      "description": "Habilitar para barajar el orden de preguntas mostradas."
+      "label": "Preguntas aleatorias",
+      "description": "Permite aleatorizar el orden de las preguntas en pantalla.",
+      "default": false
     },
     {
-      "label": "Número de preguntas a mostrar:",
-      "description": "Crear un lote aleatorio de preguntas a partir del total."
+      "label": "N\u00famero de preguntas que se mostrar\u00e1n:",
+      "description": "Cree un lote aleatorio de preguntas a partir del total."
     },
     {
       "label": "Cuestionario terminado",
       "fields": [
         {
-          "label": "Mostrar resultados"
+          "label": "Mostrar resultados",
+          "default": true
         },
         {
-          "label": "Mostrar botón Solución"
+          "label": "Bot\u00f3n de soluci\u00f3n de pantalla",
+          "default": true
         },
         {
-          "label": "Mostrar botón intentar de nuevo"
+          "label": "Bot\u00f3n de reintento de visualizaci\u00f3n",
+          "default": true
         },
         {
-          "label": "Mensaje para Sin resultados",
-          "description": "Texto mostrado en página final cuando está deshabilitado \"Mostrar resultados\"",
-          "default": "Terminado"
+          "label": "No hay resultados",
+          "description": "Texto mostrado en la p\u00e1gina final cuando \"Mostrar resultados\" est\u00e1 desactivado",
+          "default": "Finished"
         },
         {
-          "label": "Encabezado de Retroalimentación",
-          "default": "Tu resultado:",
-          "description": "Este encabezado se mostrará al final del cuestionario cuando el usuario haya respondido todas las preguntas."
+          "label": "Comentarios",
+          "default": "Your result:",
+          "description": "Este t\u00edtulo se mostrar\u00e1 al final del cuestionario cuando el usuario haya respondido a todas las preguntas.",
+          "tags": [
+            "strong",
+            "em",
+            "code"
+          ]
         },
         {
-          "label": "Anunciador de la puntuación",
-          "description": "Esta etiqueta se utilizará para anunciar la puntuación final al usuario en la pantalla final",
-          "default": "Has conseguido @finals de @totals puntos"
+          "label": "Anunciador de resultados",
+          "description": "Esta etiqueta se utilizar\u00e1 para anunciar la puntuaci\u00f3n final al usuario en la pantalla final",
+          "default": "You got @finals out of @totals points"
         },
         {
-          "label": "Retroalimentación Global",
+          "label": "Comentarios generales",
           "fields": [
             {
               "widgets": [
@@ -164,18 +200,21 @@
                   "label": "Por defecto"
                 }
               ],
-              "label": "Definir retroalimentación personalizada para cualquier rango de puntuación",
-              "description": "Ejemplo: 0-20 % Puntuación mala, 21-91 % Puntuación media, 91-100 % Puntuación excelente!",
-              "entity": "rango",
+              "label": "Defina comentarios personalizados para cualquier rango de puntuaci\u00f3n",
+              "description": "Haga clic en el bot\u00f3n \"A\u00f1adir rango\" para a\u00f1adir tantos rangos como necesite. Ejemplo: 0-20% Mala puntuaci\u00f3n, 21-91% Puntuaci\u00f3n media, 91-100% \u00a1Gran puntuaci\u00f3n!",
+              "entity": "range",
               "field": {
                 "fields": [
                   {
-                    "label": "Rango del Puntuación"
+                    "label": "Rango de puntuaci\u00f3n",
+                    "default": 0
                   },
-                  {},
                   {
-                    "label": "Retroalimentación para rango de puntuación definido",
-                    "placeholder": "Escribe tu retroalimentación"
+                    "default": 100
+                  },
+                  {
+                    "label": "Retroalimentaci\u00f3n para el rango de puntuaci\u00f3n definido",
+                    "placeholder": "Rellene los comentarios"
                   }
                 ]
               }
@@ -183,92 +222,135 @@
           ]
         },
         {
-          "label": "Retroalimentación Antigua",
+          "label": "Comentarios antiguos",
           "fields": [
             {
-              "label": "Felicitación para cuestionario aprobado",
-              "description": "Este texto se mostrará encima de la puntuación si el usuario ha superado correctamente la prueba."
+              "label": "Cuestionario superado saludo",
+              "description": "Este texto se mostrar\u00e1 encima de la puntuaci\u00f3n si el usuario ha superado con \u00e9xito el cuestionario.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Comentario para Aprobado",
-              "description": "Este comentario se mostrará después de la puntuación si el usuario ha superado correctamente la prueba."
+              "label": "Comentario aprobado",
+              "description": "Este comentario se mostrar\u00e1 despu\u00e9s de la puntuaci\u00f3n si el usuario ha superado con \u00e9xito el cuestionario.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             },
             {
-              "label": "Título para cuestionario no aprobado",
-              "description": "Este texto se mostrará encima de la puntuación si el usuario no ha superado la prueba."
+              "label": "Test fallido t\u00edtulo",
+              "description": "Este texto se mostrar\u00e1 encima de la puntuaci\u00f3n si el usuario ha suspendido el cuestionario.",
+              "tags": [
+                "strong",
+                "em",
+                "code"
+              ]
             },
             {
-              "label": "Comentario para no aprobado",
-              "description": "Este comentario se mostrará después de la puntuación si el usuario no ha superado la prueba."
+              "label": "Comentario fallido",
+              "description": "Este comentario se mostrar\u00e1 despu\u00e9s de la puntuaci\u00f3n si el usuario ha suspendido el cuestionario.",
+              "tags": [
+                "sub",
+                "sup",
+                "strong",
+                "em",
+                "a",
+                "p",
+                "code"
+              ]
             }
           ]
         },
         {
-          "label": "Etiqueta botón Solución",
-          "default": "Mostrar solución",
-          "description": "Texto para el botón de Solución."
+          "label": "Etiqueta del bot\u00f3n de soluci\u00f3n",
+          "default": "Show solution",
+          "description": "Texto para el bot\u00f3n de soluci\u00f3n."
         },
         {
-          "label": "Etiqueta botón Intentar de nuevo",
-          "default": "Intentar de nuevo",
-          "description": "Texto para el botón \"Intentar de nuevo\"."
+          "label": "Etiqueta del bot\u00f3n Reintentar",
+          "default": "Retry",
+          "description": "Texto para el bot\u00f3n de reintento."
         },
         {
-          "label": "Texto botón Terminar",
-          "default": "Terminar"
+          "label": "Texto del bot\u00f3n Finalizar",
+          "default": "Finish"
         },
         {
-          "label": "Texto del botón Enviar",
-          "default": "Enviar"
+          "label": "Texto del bot\u00f3n Enviar",
+          "default": "Submit"
         },
         {
-          "label": "Mostrar vídeo antes de resultados del cuestionario"
+          "label": "Mostrar v\u00eddeo antes de los resultados del cuestionario"
         },
         {
-          "label": "Botón habilitar saltar vídeo"
+          "label": "Activar el bot\u00f3n de salto de v\u00eddeo"
         },
         {
-          "label": "Etiqueta botón Saltar vídeo",
-          "default": "Saltar vídeo"
+          "label": "Etiqueta del bot\u00f3n Saltar v\u00eddeo",
+          "default": "Skip video"
         },
         {
-          "label": "Vídeo para aprobado",
-          "description": "Este vídeo se reproducirá si el usuario ha aprobado la prueba."
+          "label": "V\u00eddeo aprobado",
+          "description": "Este v\u00eddeo se reproducir\u00e1 si el usuario ha superado con \u00e9xito el cuestionario."
         },
         {
-          "label": "Vídeo para no aprobado",
-          "description": "Este vídeo se reproducirá si el usuario no ha superado la prueba."
+          "label": "Fallar v\u00eddeo",
+          "description": "Este v\u00eddeo se reproducir\u00e1 si el usuario suspende el cuestionario."
         }
       ]
     },
     {
-      "label": "Configuraciones para botones \"Mostrar solución\" y \"Intentar de nuevo\"",
+      "label": "Ajustes para \"Comprobar\", \"Mostrar soluci\u00f3n\" y \"Reintentar\"",
       "fields": [
         {
-          "label": "Mostrar botones \"Comprobar\"",
-          "description": "Esta opción determina si se mostrará un botón para \"Comprobar\" en todas las preguntas."
+          "label": "Mostrar botones \"Check",
+          "description": "Esta opci\u00f3n determina si el bot\u00f3n \"Marcar\" se mostrar\u00e1 para todas las preguntas.",
+          "default": true
         },
         {
-          "label": "Anular el botón \"Mostrar Solución\"",
-          "description": "Esta opción determina si el botón \"Mostrar solución\" se muestra en todas las preguntas, se desactiva para todas, o se configura para cada pregunta individualmente.",
+          "label": "Anular el bot\u00f3n \"Mostrar soluci\u00f3n",
+          "description": "Esta opci\u00f3n determina si el bot\u00f3n \"Mostrar soluci\u00f3n\" se mostrar\u00e1 para todas las preguntas, se desactivar\u00e1 para todas o se configurar\u00e1 para cada pregunta individualmente.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Habilitado"
+              "label": "Activado"
             },
             {
-              "label": "Deshabilitado"
+              "label": "Discapacitados"
             }
           ]
         },
         {
-          "label": "Anular botón \"Intentar de nuevo\"",
-          "description": "Esta opción determina si el botón \"Intentar de nuevo\" se muestra para todas las preguntas, se desactiva para todas o se configura para cada pregunta individualmente.",
+          "label": "Anular bot\u00f3n \"Reintentar",
+          "description": "Esta opci\u00f3n determina si el bot\u00f3n \"Reintentar\" se mostrar\u00e1 para todas las preguntas, se desactivar\u00e1 para todas o se configurar\u00e1 para cada pregunta individualmente.",
+          "showWhen": {
+            "rules": [
+              {
+                "field": "checkButton"
+              }
+            ]
+          },
           "options": [
             {
-              "label": "Habilitado"
+              "label": "Activado"
             },
             {
-              "label": "Deshabilitado"
+              "label": "Discapacitados"
             }
           ]
         }
