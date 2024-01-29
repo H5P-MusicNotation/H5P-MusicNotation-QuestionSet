@@ -8,6 +8,9 @@ The final assessment and scoring are cumulative.
 
 Currently, this module incorporates the H5P modules [Musik Notation](https://github.com/H5P-MusicNotation/H5P-MusicNotation) and [Music Notation Multiple Choice](https://github.com/H5P-MusicNotation/H5P-MusicNotation-MultipleChoice). For individual documentations, please click on the module names.
 
+You will find the h5p-file of the current version in the "h5p-package" folder.
+
+
 ## Installation Guide + User Manual
 [Repository Wiki](https://github.com/H5P-MusicNotation/H5P-MusicNotation/wiki)
 ## Resources 
